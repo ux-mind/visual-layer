@@ -1,0 +1,32 @@
+.header {
+	position: absolute;
+	color: rgba($white, 0.6);
+	top: 0;
+	left: 0;
+	z-index: 5;
+	margin-top: 50px;
+	width: 100%;
+	&-links {
+		border-radius: 10px;
+		border: 1px solid rgba($gray-400, 0.2);
+		min-height: 88px;
+		padding: 0 98px;
+		@include flex(row, center, space-between);
+		&__item {
+			font-family: $font;
+			letter-spacing: 0.095em;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1320px) {
+	.header {
+		margin-top: 25px;
+		&-links {
+			display: none;
+		}
+	}
+}

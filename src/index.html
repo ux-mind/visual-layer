@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/favicon.ico">
+	<link href="https://c2a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.vers1.css" media="all" rel="stylesheet"
+		crossorigin>
+	<link href="https://c1a.chesstempo.com/fonts/MaterialIcons-Regular.woff2" rel="stylesheet" crossorigin>
+	<title>Chess Live</title>
+</head>
+
+<body>
+	<div id="root"></div>
+	<script defer language="javascript" src="https://c1a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.bundle.vers1.js"
+		crossorigin></script>
+	<script type="text/javascript" src="./js/utils/ltpgnviewer.js"></script>
+	<script type="text/javascript">
+		function pgn2fen() {
+			Init(window.document.forms[0].startfen.value);
+			SetPgnMoveText(window.document.forms[0].pgn.value);
+			var ff = "", ff_new = "", ff_old;
+			do {
+				ff_old = ff_new;
+				MoveForward(1);
+				ff_new = GetFEN();
+				if (ff_old != ff_new) ff += ff_new + "\n";
+			}
+			while (ff_old != ff_new);
+			window.document.forms[0].fen.value = ff;
+		}
+	</script>
+</body>
+
+</html>
