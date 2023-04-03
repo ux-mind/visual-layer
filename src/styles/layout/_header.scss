@@ -1,32 +1,37 @@
 .header {
 	position: absolute;
-	color: rgba($white, 0.6);
 	top: 0;
 	left: 0;
 	z-index: 5;
-	margin-top: 50px;
 	width: 100%;
+	padding: 17px 0;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
 	&-links {
-		border-radius: 10px;
-		border: 1px solid rgba($gray-400, 0.2);
-		min-height: 88px;
-		padding: 0 98px;
-		@include flex(row, center, space-between);
-		&__item {
-			font-family: $font;
-			letter-spacing: 0.095em;
-			&:hover {
-				color: $red;
-			}
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		li a {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			display: flex;
+			gap: 4px;
 		}
+	}
+	&__button {
+		background: #3B45FF;
+		border-radius: 15px;
+		padding: 16px 32px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
 	}
 }
 
 @media screen and (max-width: 1320px) {
 	.header {
-		margin-top: 25px;
-		&-links {
-			display: none;
-		}
 	}
 }
