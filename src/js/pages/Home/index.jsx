@@ -13,6 +13,12 @@ import features_icon_2 from '../../../assets/images/features-icon-2.svg';
 import features_icon_3 from '../../../assets/images/features-icon-3.svg';
 import features_icon_4 from '../../../assets/images/features-icon-4.svg';
 import product_img_1 from '../../../assets/images/product-img-1.png';
+import product_img_2 from '../../../assets/images/product-img-2.png';
+import product_img_3 from '../../../assets/images/product-img-3.png';
+import loved_img_1 from '../../../assets/images/loved-img-1.png';
+import loved_img_2 from '../../../assets/images/loved-img-2.png';
+import loved_img_3 from '../../../assets/images/loved-img-3.png';
+import form_img from '../../../assets/images/form-img.png';
 
 const Home = () => {
 	return (
@@ -121,27 +127,31 @@ const Home = () => {
 					</div>
 				</div>
 				<div className='home-product__section product-section-2'>
-					<div className='home-product__section-content'>
-						<img alt="" src="" />
-						<div className='home-product__section-info'>
-							<div className='home-product__section-title'>
-								Automatically gain valuable insights and identify data quality issues
+					<div className='container'>
+						<div className='home-product__section-content'>
+							<div className='home-product__section-info'>
+								<div className='home-product__section-title'>
+									Automatically gain valuable insights and identify data quality issues
+								</div>
+								<div className='home-product__section-text'>
+									Visual Layer automatically scans through your entire dataset, whether it's 10K or 50B images, and continuously provides insights about your data while alerting you to possible quality issues in your dataset
+								</div>
 							</div>
-							<div className='home-product__section-text'>
-								Visual Layer automatically scans through your entire dataset, whether it's 10K or 50B images, and continuously provides insights about your data while alerting you to possible quality issues in your dataset
-							</div>
+							<img alt="" src={product_img_2} />
 						</div>
 					</div>
 				</div>
 				<div className='home-product__section product-section-3'>
-					<div className='home-product__section-content'>
-						<img alt="" src="" />
-						<div className='home-product__section-info'>
-							<div className='home-product__section-title'>
-								Effortlessly resolve all data quality issues automatically
-							</div>
-							<div className='home-product__section-text'>
-								Our platform's automated data quality issue resolution offers effortless and efficient data management. With automatic resolution capabilities, data quality issues are swiftly resolved, ensuring optimal performance and accuracy.
+					<div className='container'>
+						<div className='home-product__section-content'>
+							<img alt="" src={product_img_3} />
+							<div className='home-product__section-info'>
+								<div className='home-product__section-title'>
+									Effortlessly resolve all data quality issues automatically
+								</div>
+								<div className='home-product__section-text'>
+									Our platform's automated data quality issue resolution offers effortless and efficient data management. With automatic resolution capabilities, data quality issues are swiftly resolved, ensuring optimal performance and accuracy.
+								</div>
 							</div>
 						</div>
 					</div>
@@ -154,7 +164,7 @@ const Home = () => {
 							Visual Layer community
 						</div>
 						<div className='home-community__items'>
-							<div className='home-community__item'>
+							<div className='home-community__item community-item-1'>
 								<div className='home-community__item-number'>
 									50,000,000,000
 								</div>
@@ -162,7 +172,7 @@ const Home = () => {
 									Images processed by fastdup so far
 								</div>
 							</div>
-							<div className='home-community__item'>
+							<div className='home-community__item community-item-2'>
 								<div className='home-community__item-number'>
 									180,000
 								</div>
@@ -170,7 +180,7 @@ const Home = () => {
 									fastdup github project users
 								</div>
 							</div>
-							<div className='home-community__item'>
+							<div className='home-community__item community-item-3'>
 								<div className='home-community__item-number'>
 									1$
 								</div>
@@ -190,7 +200,7 @@ const Home = () => {
 						</div>
 						<div className='home-loved__items'>
 							<div className='home-loved__item'>
-								<img alt="" src="" />
+								<img alt="" src={loved_img_1} />
 								<div className='home-loved__item-text'>
 									Fastdup worked great. Already on my way
 								</div>
@@ -202,7 +212,7 @@ const Home = () => {
 								</div>
 							</div>
 							<div className='home-loved__item'>
-								<img alt="" src="" />
+								<img alt="" src={loved_img_2} />
 								<div className='home-loved__item-text'>
 									Meesho is using fastdup to curate 1,000,000,000 images of our digital catalog
 								</div>
@@ -214,7 +224,7 @@ const Home = () => {
 								</div>
 							</div>
 							<div className='home-loved__item'>
-								<img alt="" src="" />
+								<img alt="" src={loved_img_3} />
 								<div className='home-loved__item-text'>
 									Everyone should de-duplicate their images. I found fastdup to work pretty well
 								</div>
@@ -232,11 +242,13 @@ const Home = () => {
 			<section className='home-form'>
 				<div className='container'>
 					<div className='home-form__content'>
-						<img alt="" src="" />
+						<img alt="" src={form_img} />
 						<div className='home-form__info'>
 							<div className='home-form__title'>
+								Join the alpha waitlist
 							</div>
 							<div className='home-form__text'>
+								We promise to only update about Visual Layer product release - nothing markety.
 							</div>
 							<div className='home-form__row'>
 								<div className='home-form__input-wrap'>
