@@ -84,6 +84,8 @@
 			font-size: 16px;
 			line-height: 30px;
 			text-align: center;
+			position: relative;
+			z-index: 1;
 		}
 		&__bottom-content {
 			display: flex;
