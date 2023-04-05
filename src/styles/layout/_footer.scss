@@ -1,3 +1,99 @@
 .footer {
     padding: 80px 0 40px;
+    background: linear-gradient(107.47deg, #4000A1 37.13%, #FF3D72 158.43%);
+    &__top {
+        display: grid;
+        grid-template-columns: auto max-content;
+        grid-row-gap: 80px;
+    }
+    &__middle {
+        display: flex;
+        margin-top: 80px;
+        &-logo {
+            margin-top: 32px;
+            width: 135px;
+            display: block;
+        }
+    }
+    &__bottom {
+        display: flex;
+        margin-top: 95px;
+        border-top: 1px solid rgba(255, 255, 255, 0.8);
+        padding-top: 40px;
+        &-menu {
+            display: flex;
+            gap: 40px;
+            margin-left: auto;
+            li a {
+			    font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    &__logo {
+        height: 58px;
+        display: flex;
+        img {
+            width: 54px;
+        }
+        &-text {
+			font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            width: 112px;
+            margin-left: 24px;
+        }
+    }
+    &-links {
+        display: flex;
+        gap: 95px;
+        &__label {
+			font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        ul {
+            margin-top: 32px;
+            li {
+                margin-bottom: 16px;
+            }
+            li:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__slogan {
+		font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        align-items: center;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+        max-width: 573px;
+        span {
+            color: #FFC859;
+        }
+    }
+    &__social {
+        &-items {
+            display: flex;
+            margin-top: 16px;
+            gap: 32px;
+        }
+    }
+    &__credits {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+    }
 }

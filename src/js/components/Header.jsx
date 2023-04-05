@@ -3,20 +3,21 @@ import { Link } from 'react-router-dom';
 import PUBLIC_ROUTES from '../data/publicRoutes';
 import logo from '../../assets/images/logo.svg';
 import arrow_down from '../../assets/images/arrow-down.svg';
+import { useLocation } from 'react-router-dom';
 
 const links = [
 	{
 		name: 'Company',
 		children: [
-			{ name: 'About Us', route: PUBLIC_ROUTES.about_us },
-			{ name: 'In Press', route: PUBLIC_ROUTES.in_press }
+			{ name: 'About Us', href: PUBLIC_ROUTES.about_us },
+			{ name: 'In Press', href: PUBLIC_ROUTES.in_press }
 		]
 	},
 	{
 		name: 'Community',
 		children: [
-			{ name: 'Join GitHub Community', route: '#' },
-			{ name: 'Join Slack Community', route: '#' }
+			{ name: 'Join GitHub Community', href: '#' },
+			{ name: 'Join Slack Community', href: '#' }
 		]
 	},
 	{
@@ -36,12 +37,18 @@ const Header = () => {
 		setMenuOpened(true);
 	};
 
+	const location = useLocation();
+
+	const onMouseEnter = () => {
+
+	}
+
 	return (
 		<>
 			<header className="header">
 				<div className="container">
 					<div className='header__content'>
-						<Link className='header__logo-wrap' href="/">
+						<Link className='header__logo-wrap' to="/">
 							<img alt="" src={logo} />
 						</Link>
 						<ul className="header-links">
@@ -54,14 +61,32 @@ const Header = () => {
 											: null
 										}
 									</Link>
+									{children ? 
+										<>
+										<div className='header-links__connect'>
+										</div>
+										<div className='header-links__dropdown'>
+											{children.map((child) => {
+												return (
+													<Link key={child.name} to={child.href}>
+														{child.name}
+													</Link>
+												);
+											})}
+										</div>
+										</>
+										: null
+									}
 								</li>
 							))}
 						</ul>
-						<Link className="header__button-wrap" to='/'>
+						{location.pathname !== PUBLIC_ROUTES.request_a_demo ?
+						<Link className="header__button-wrap" to={PUBLIC_ROUTES.request_a_demo}>
 							<button className='header__button'>
 								Request a demo
 							</button>
 						</Link>
+						: null}
 					</div>
 				</div>
 			</header>

@@ -52,7 +52,7 @@ html {
 @import 'components/app';
 
 // 7. Page-specific styles
-@import 'pages/home';
+@import 'pages/home', 'pages/requestademo';
 
 // 8. Themes
 @import 'themes/default', 'themes/media';

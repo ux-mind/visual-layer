@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PUBLIC_ROUTES from '../data/publicRoutes';
+import logo from '../../assets/images/logo.svg';
+import logo_2 from '../../assets/images/footer-logo-2.svg';
+import footer_social_1 from '../../assets/images/footer-social-1.svg';
+import footer_social_2 from '../../assets/images/footer-social-2.svg';
+import footer_social_3 from '../../assets/images/footer-social-3.svg';
+import footer_social_4 from '../../assets/images/footer-social-4.svg';
+import footer_social_5 from '../../assets/images/footer-social-5.svg';
 
 const links = [
 	{
@@ -23,23 +30,23 @@ const links = [
 
 const social_links = [
 	{
-		icon: '',
+		icon: footer_social_1,
 		href: 'https://github.com'
 	},
 	{
-		icon: '',
+		icon: footer_social_2,
 		href: 'https://github.com'
 	},
 	{
-		icon: '',
+		icon: footer_social_3,
 		href: 'https://twitter.com'
 	},
 	{
-		icon: '',
+		icon: footer_social_4,
 		href: 'https://linkendin.com'
 	},
 	{
-		icon: '',
+		icon: footer_social_5,
 		href: 'https://youtube.com'
 	},
 ];
@@ -65,81 +72,80 @@ const bottomLinks = [
 
 const Footer = () => {
 	return (
-		<>
-			<footer className="footer">
-				<div className="container">
-					<div className="footer__top">
-						<Link className='footer__logo' href="/">
-							<img alt="" src="" />
+		<footer className="footer">
+			<div className="container">
+				<div className="footer__top">
+					<Link className='footer__logo' href="/">
+						<img alt="" src={logo} />
+						<div className='footer__logo-text'>
+							Simplifying Visual Data
+						</div>
+					</Link>
+					<div className="footer-links">
+						{links.map(({ name, children }) => {
+							return (
+								<div key={name} className='footer-links__wrap'>
+									<div className="footer-links__label">
+										{name}
+									</div>
+									{children && 
+									<ul>
+										{children.map((child) => {
+											return (
+												<li key={child.name} className="footer-links__item">
+													<Link to={child.route}>{child.name}</Link>
+												</li>
+											);
+										})}
+									</ul>
+									}
+								</div>
+							)
+						})}
+					</div>
+					<div className="footer__middle-left">
+						<div className="footer__slogan">
+							Be part of our <span>community</span> and connect with us
+						</div>
+						<Link className='footer__middle-logo' href="/">
+							<img alt="" src={logo_2} />
 						</Link>
-						<div className="footer-links">
-							{links.map(({ name, children }) => {
-								return (
-									<>
-										<div className="footer-links__label" key={name}>
-											{name}
-										</div>
-										{children && 
-										<ul>
-											{children.map((child) => {
-												return (
-													<li className="header-links__item" key={child.name}>
-														<Link to={child.route}>{child.name}</Link>
-													</li>
-												);
-											})}
-										</ul>
-										}
-									</>
-								)
-							})}
-						</div>
 					</div>
-					<div className="footer__middle">
-						<div class="footer__middle-left">
-							<div class="footer__slogan">
-								Be part of our <span>community</span> and connect with us
-							</div>
-							<Link className='footer__middle-logo' href="/">
-								<img alt="" src="" />
-							</Link>
+					<div className="footer__social">
+						<div className="footer__social-label">
+							Find us on:
 						</div>
-						<div class="footer__social">
-							<div class="footer__social-label">
-								Find us on:
-							</div>
-							<ul class="footer__social-items">
-								{social_links.map((item) => {
-									return (
-										<li>
-											<a href={item.href}>
-												<img src={item.icon} />
-											</a>
-										</li>
-									);
-								})}
-							</ul>
-						</div>
-					</div>
-					<div className="footer__bottom">
-						<div className='footer__credits'>
-							Copyright © 2023 Visual Layer, Inc. All rights reserved.
-						</div>
-						<ul class="footer__bottom-menu">
-							{bottomLinks.map((item) => {
+						<ul className="footer__social-items">
+							{social_links.map((item, i) => {
 								return (
-									<li>
+									<li key={'footer-social-' + i}>
 										<a href={item.href}>
-											{item.name}
+											<img src={item.icon} />
 										</a>
 									</li>
-								)
+								);
 							})}
 						</ul>
 					</div>
 				</div>
-			</footer>
-		</>
+				<div className="footer__bottom">
+					<div className='footer__credits'>
+						Copyright © 2023 Visual Layer, Inc. All rights reserved.
+					</div>
+					<ul className="footer__bottom-menu">
+						{bottomLinks.map((item) => {
+							return (
+								<li key={item.name}>
+									<a href={item.href}>
+										{item.name}
+									</a>
+								</li>
+							)
+						})}
+					</ul>
+				</div>
+			</div>
+		</footer>
 	);
 };
 

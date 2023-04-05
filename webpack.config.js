@@ -153,7 +153,7 @@ module.exports = {
 				type: 'asset/inline'
 			},
 			{
-				test: /\.(jpe?g|png|gif|svg)$/i,
+				test: /\.(jpe?g|png|gif|svg|webm)$/i,
 				type: 'asset'
 			},
 			{
