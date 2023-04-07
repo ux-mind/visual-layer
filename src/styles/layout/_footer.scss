@@ -97,3 +97,104 @@
         line-height: 21px;
     }
 }
+
+@media screen and (max-width: 1230px) {
+	.footer {
+		&__top {
+            grid-template-columns: repeat(1,1fr);
+		}
+        &__bottom {
+            flex-direction: column;
+            gap: 27px;
+            align-items: center;
+            &-menu {
+                margin-left: 0;
+                gap: 25px;
+            }
+        }
+	}
+}
+
+
+@media screen and (max-width: 992px) {
+    .footer {
+        background: linear-gradient(107.47deg, #4000A1 37.13%, #FF3D72 158.43%);
+        padding: 37px 0 63px;
+        &__top {
+            display: block;
+        }
+        &__logo {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+        &__logo-text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0.02em;
+            margin-left: 19px;
+        }
+        &__slogan {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 2.6px;
+            margin-top: 26px;
+            max-width: 340px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &-links {
+            display: none;
+        }
+        &__middle-logo {
+            margin-top: 14px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__social {
+            margin-top: 28px;
+            max-width: 283px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__social-label {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 33px;
+            text-align: center;
+        }
+        &__social-items {
+            margin-top: 12px;
+        }
+        &__bottom {
+            margin-top: 43px;
+            padding-top: 28px;
+        }
+        &__credits {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            max-width: 230px;
+            text-align: center;
+        }
+        &__bottom-menu {
+            flex-direction: column;
+            gap: 10px;
+            li {
+                text-align: center;
+                a {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

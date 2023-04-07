@@ -1,7 +1,7 @@
-import React from 'react';
-import Ticker from 'react-awesome-ticker';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import VideoPlayer from "react-background-video-player";
+import { VerticalTicker, HorizontalTicker } from "react-infinite-ticker";
+import PUBLIC_ROUTES from '../../../data/publicRoutes';
 
 import intro_icon from '../../../../assets/images/intro-icon.svg';
 import intro_icon_2 from '../../../../assets/images/intro-icon-2.svg';
@@ -12,19 +12,34 @@ import partner_3 from '../../../../assets/images/partner-3.png';
 import partner_4 from '../../../../assets/images/partner-4.png';
 import partner_5 from '../../../../assets/images/partner-5.png';
 import arrow_blue from '../../../../assets/images/arrow-blue.svg';
-import sample from '../../../../assets/videos/hero.webm';
+import hero_img from '../../../../assets/images/hero.gif';
 
 const Intro = ({handleClick}) => {
+    const [partners, setPartners] = useState([
+        {
+            id: 0,
+            img: partner_1
+        },
+        {
+            id: 1,
+            img: partner_2
+        },
+        {
+            id: 2,
+            img: partner_3
+        },
+        {
+            id: 3,
+            img: partner_4
+        },
+        {
+            id: 4,
+            img: partner_5
+        }
+    ]);
+    
 	return (
         <section className='home-intro'>
-            <VideoPlayer
-                className="video"
-                src={
-                    sample
-                }
-                autoPlay={true}
-                muted={true}
-            />
             <a href='/' className='home-intro__right-button-1'>
                 <img className='home-intro__right-button-icon' alt="" src={intro_icon_2} />
                 <div>Join our GitHub!</div>
@@ -45,29 +60,43 @@ const Intro = ({handleClick}) => {
                             You can focus on building amazing products while we manage your visual data
                         </div>
                         <button className='home-intro__button' onClick={handleClick}>
-                            Join our alpha waiting list
+                            Join our waiting list
                         </button>
                         <div className='home-intro__developers'>
                             <img alt="" src={intro_icon} />
-                            From the creators of fastdup, XGBoost & Turi Create
+                            <span>From the creators of fastdup, XGBoost & Turi Create</span>
                         </div>
                     </div>
+                    <img className='home-intro__animation' alt='' src={hero_img} />
                 </div>
                 <div className='home-intro__bottom'>
                     <div className='home-intro__bottom-title'>
                         Trusted by our users
                     </div>
-                    <div className='home-intro__bottom-content'>
-                        <Ticker>
-                        <img className='partner-1' alt="" src={partner_1} />
-                        <img className='partner-2' alt="" src={partner_2} />
-                        <img className='partner-3' alt="" src={partner_3} />
-                        <img className='partner-4' alt="" src={partner_4} />
-                        <img className='partner-5' alt="" src={partner_5} />
-                        </Ticker>
-                    </div>
                 </div>
             </div>
+            <div className='home-intro__bottom-content'>
+                {partners.map((item, i) => {
+                    return (
+                        <img className='loop-collection' key={item.id + 1} alt='' src={item.img} />
+                    )
+                })}
+                {partners.map((item, i) => {
+                    return (
+                        <img className='loop-collection' key={item.id + 2} alt='' src={item.img} />
+                    )
+                })}
+                {partners.map((item, i) => {
+                    return (
+                        <img className='loop-collection' key={item.id + 3} alt='' src={item.img} />
+                    )
+                })}
+            </div>
+            <Link className="home-intro__button-wrap" to={PUBLIC_ROUTES.request_a_demo}>
+                <button className='home-intro__button'>
+                    Request a demo
+                </button>
+            </Link>
         </section>
 	);
 };

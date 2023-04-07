@@ -13,7 +13,7 @@ const Loved = () => {
                         Loved by our users
                     </div>
                     <div className='home-loved__items'>
-                        <div className='home-loved__item'>
+                        <div className='home-loved__item loved-item-1'>
                             <img alt="" src={loved_img_1} />
                             <div className='home-loved__item-text'>
                                 Fastdup worked great. Already on my way
@@ -25,7 +25,7 @@ const Loved = () => {
                                 CEO Playground.ai, ex CEO Mixpanel
                             </div>
                         </div>
-                        <div className='home-loved__item'>
+                        <div className='home-loved__item loved-item-2'>
                             <img alt="" src={loved_img_2} />
                             <div className='home-loved__item-text'>
                                 Meesho is using fastdup to curate 1,000,000,000 images of our digital catalog
@@ -37,7 +37,7 @@ const Loved = () => {
                                 Manager, Data Science
                             </div>
                         </div>
-                        <div className='home-loved__item'>
+                        <div className='home-loved__item loved-item-3'>
                             <img alt="" src={loved_img_3} />
                             <div className='home-loved__item-text'>
                                 Everyone should de-duplicate their images. I found fastdup to work pretty well

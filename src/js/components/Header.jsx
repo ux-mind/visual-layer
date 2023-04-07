@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PUBLIC_ROUTES from '../data/publicRoutes';
 import logo from '../../assets/images/logo.svg';
 import arrow_down from '../../assets/images/arrow-down.svg';
+import burger from '../../assets/images/burger.svg';
 import { useLocation } from 'react-router-dom';
 
 const links = [
@@ -87,6 +88,7 @@ const Header = () => {
 							</button>
 						</Link>
 						: null}
+						<img className="header__burger" alt="" src={burger} />
 					</div>
 				</div>
 			</header>

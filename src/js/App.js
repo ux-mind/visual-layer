@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import RequestADemo from './pages/RequestADemo';
+import About from './pages/About';
 import PUBLIC_ROUTES from './data/publicRoutes';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
 				<Routes>
 					<Route path={PUBLIC_ROUTES.home} element={<Home />} />
 					<Route path={PUBLIC_ROUTES.request_a_demo} element={<RequestADemo />} />
+					<Route path={PUBLIC_ROUTES.about} element={<About />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

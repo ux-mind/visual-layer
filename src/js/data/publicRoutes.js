@@ -1,6 +1,6 @@
 const PUBLIC_ROUTES = {
 	home: '/',
-	about_us: '/about-us',
+	about: '/about',
 	contact_us: '/contact-us',
 	company: '/company',
 	privacy_policy: '/privacy-policy',

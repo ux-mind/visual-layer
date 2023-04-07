@@ -1,5 +1,5 @@
-import React from 'react';
-import Ticker from 'react-awesome-ticker';
+import React, { useEffect, useState } from 'react';
+import Ticker from "react-ticker";
 
 import partner_1 from '../../../assets/images/partner-1.png';
 import partner_2 from '../../../assets/images/partner-2.png';
@@ -10,6 +10,29 @@ import intro_icon from '../../../assets/images/intro-icon.svg';
 import requestademo_list from '../../../assets/images/requestademo-list.svg';
 
 const RequestADemo = () => {
+	const [partners, setPartners] = useState([
+        {
+            id: 0,
+            img: partner_1
+        },
+        {
+            id: 1,
+            img: partner_2
+        },
+        {
+            id: 2,
+            img: partner_3
+        },
+        {
+            id: 3,
+            img: partner_4
+        },
+        {
+            id: 4,
+            img: partner_5
+        }
+    ]);
+
 	return (
 		<main className="main requestademo">
 			<div className='container'>
@@ -107,16 +130,26 @@ const RequestADemo = () => {
 						Trusted by our users
                     </div>
                     <div className='requestademo__bottom-content'>
-                        <Ticker>
-                        <img className='partner-1' alt="" src={partner_1} />
-                        <img className='partner-2' alt="" src={partner_2} />
-                        <img className='partner-3' alt="" src={partner_3} />
-                        <img className='partner-4' alt="" src={partner_4} />
-                        <img className='partner-5' alt="" src={partner_5} />
-                        </Ticker>
                     </div>
                 </div>
 			</div>
+            <div className='requestademo__bottom-content'>
+                {partners.map((item, i) => {
+                    return (
+                        <img className='loop-collection' key={item.id + 1} alt='' src={item.img} />
+                    )
+                })}
+                {partners.map((item, i) => {
+                    return (
+                        <img className='loop-collection' key={item.id + 2} alt='' src={item.img} />
+                    )
+                })}
+                {partners.map((item, i) => {
+                    return (
+                        <img className='loop-collection' key={item.id + 3} alt='' src={item.img} />
+                    )
+                })}
+            </div>
 		</main>
 	);
 };

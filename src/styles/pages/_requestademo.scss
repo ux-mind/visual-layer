@@ -13,35 +13,32 @@
 		line-height: 30px;
 		text-align: center;
 	}
+	.loop-collection {
+		margin-right: 64px;
+		animation: linear infinite;
+		animation-name: run;
+		animation-duration: 20s;
+	}
+	@-webkit-keyframes run {
+		0% {
+		  left: 0;
+		  transform: translateX(0);
+		}
+		100% {
+		  left: 100%;
+		  transform: translateX(-1260px);
+		}
+	}
 	&__bottom-content {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 25px;
-		.partner-1 {
-			width: 167px;
-			height: 40px;
-		}
-		.partner-2 {
-			width: 202px;
-			height: 45px;
-		}
-		.partner-3 {
-			width: 202px;
-			height: 38px;
-		}
-		.partner-4 {
-			width: 174px;
-			height: 38px;
-		}
-		.partner-5 {
-			width: 193px;
-			height: 57px;
-		}
-		img:last-child {
-			margin-right: 128px;
-		}
+		position: relative;
+		align-items: center;
 		img {
 			margin-right: 64px;
+		}
+		img:last-child {
 		}
 	}
 	&__content {
