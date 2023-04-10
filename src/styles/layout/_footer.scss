@@ -10,9 +10,13 @@
         display: flex;
         margin-top: 80px;
         &-logo {
-            margin-top: 32px;
             width: 135px;
             display: block;
+        }
+        &-wrap {
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
         }
     }
     &__bottom {
@@ -49,6 +53,9 @@
             width: 112px;
             margin-left: 24px;
         }
+    }
+    &-links-mobile {
+        display: none;
     }
     &-links {
         display: flex;
@@ -87,8 +94,8 @@
     &__social {
         &-items {
             display: flex;
-            margin-top: 16px;
             gap: 32px;
+            margin-left: 55px;
         }
     }
     &__credits {
@@ -120,6 +127,11 @@
     .footer {
         background: linear-gradient(107.47deg, #4000A1 37.13%, #FF3D72 158.43%);
         padding: 37px 0 63px;
+        &__middle {
+            &-wrap {
+                flex-direction: column;
+            }
+        }
         &__top {
             display: block;
         }
@@ -152,6 +164,9 @@
         &-links {
             display: none;
         }
+        &-links-mobile {
+            display: block;
+        }
         &__middle-logo {
             margin-top: 14px;
             margin-left: auto;
@@ -162,15 +177,17 @@
             max-width: 283px;
             margin-left: auto;
             margin-right: auto;
+            &-items {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 32px;
+            }
         }
         &__social-label {
             font-weight: 500;
             font-size: 18px;
             line-height: 33px;
             text-align: center;
-        }
-        &__social-items {
-            margin-top: 12px;
         }
         &__bottom {
             margin-top: 43px;
@@ -196,5 +213,26 @@
                 }
             }
         }
+		.footer-links-mobile {
+			display: flex;
+            gap: 67px;
+            justify-content: center;
+            margin-top: 89px;
+            text-align: center;
+            .footer-links__wrap {
+                ul {
+                    margin-top: 20px;
+                    li {
+                        margin-bottom: 20px;
+                    }
+                    li:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .footer-links__label:nth-child(2) {
+                margin-top: 13px;
+            }
+		}
     }
 }

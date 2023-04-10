@@ -23,7 +23,7 @@ const Features = () => {
                         <div className="home-features__item">
                             <img className="home-features__item-icon" alt="" src={features_icon_1} />
                             <div className="home-features__item-text">
-                                Save up to 95% of data annotation costs
+                                Save up to 95% of your labeling costs
                             </div>
                         </div>
                         <div className="home-features__item">
@@ -35,7 +35,7 @@ const Features = () => {
                         <div className="home-features__item">
                             <img className="home-features__item-icon" alt="" src={features_icon_3} />
                             <div className="home-features__item-text">
-                                Iterate x20 faster on your data
+                                Accelerate your product development by x20
                             </div>
                         </div>
                         <div className="home-features__item">

@@ -46,7 +46,7 @@ const Loved = () => {
                                 Eric Wallace
                             </div>
                             <div className='home-loved__item-post'>
-                                PhD student, Berkely, Author for the popular paper of copyright violation of generative models
+                                PhD student, Berkeley, Author of the popular paper on copyright violations by generative models
                             </div>
                         </div>
                     </div>

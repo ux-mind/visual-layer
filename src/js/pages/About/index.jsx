@@ -2,11 +2,14 @@ import React, { useRef } from 'react';
 import Intro from './components/Intro';
 import Members from './components/Members';
 import Gallery from './components/Gallery';
+import Partners from './components/Partners';
+
 import members_0 from '../../../assets/images/members-0.png';
 import members_1 from '../../../assets/images/members-1.png';
 import members_2 from '../../../assets/images/members-2.png';
 import members_3 from '../../../assets/images/members-3.png';
 import members_4 from '../../../assets/images/members-4.png';
+import members_5 from '../../../assets/images/members-5.png';
 import members_6 from '../../../assets/images/members-6.png';
 import members_7 from '../../../assets/images/members-7.png';
 import members_8 from '../../../assets/images/members-8.png';
@@ -39,7 +42,7 @@ const About = () => {
 				description: 'Vijay Sharma is a seasoned entrepreneurbased in Bangalore and drives Visual Layer engagements in India.'
 			},
 			{
-				photo: members_0,
+				photo: members_5,
 				name: 'Sethu Balan Raman',
 				description: 'Sethu Balan Raman was until recently a senior director at Apple in charge of all of the deep learning infrastructure team, leading hundreds of engineers. Prior to that he was VP Engineering of Turi, acquired by Apple.'
 			}
@@ -126,6 +129,7 @@ const About = () => {
 			<Members data={data_2} />
 			<Members data={data_3} />
 			<Gallery />
+			<Partners />
 		</main>
 	);
 };

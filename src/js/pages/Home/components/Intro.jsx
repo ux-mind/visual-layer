@@ -57,17 +57,17 @@ const Intro = ({handleClick}) => {
                             Simplify Your Visual Data Ops
                         </h1>
                         <div className='home-intro__description'>
-                            You can focus on building amazing products while we manage your visual data
+                            You can focus on creating amazing products while we manage your visual data
                         </div>
                         <button className='home-intro__button' onClick={handleClick}>
-                            Join our waiting list
+                            Request a demo
                         </button>
                         <div className='home-intro__developers'>
                             <img alt="" src={intro_icon} />
                             <span>From the creators of fastdup, XGBoost & Turi Create</span>
                         </div>
                     </div>
-                    <img className='home-intro__animation' alt='' src={hero_img} />
+                    <div className='home-intro__animation'></div>
                 </div>
                 <div className='home-intro__bottom'>
                     <div className='home-intro__bottom-title'>
@@ -92,11 +92,6 @@ const Intro = ({handleClick}) => {
                     )
                 })}
             </div>
-            <Link className="home-intro__button-wrap" to={PUBLIC_ROUTES.request_a_demo}>
-                <button className='home-intro__button'>
-                    Request a demo
-                </button>
-            </Link>
         </section>
 	);
 };

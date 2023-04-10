@@ -17,10 +17,10 @@ const Form = () => {
                     />
                     <div className='home-form__info'>
                         <div className='home-form__title'>
-                            Join the alpha waitlist
+                            Join our mailing list
                         </div>
                         <div className='home-form__text'>
-                            We promise to only update about Visual Layer product release - nothing markety.
+                            We promise to only update about Visual Layer product releases
                         </div>
                         <div className='home-form__row'>
                             <div className='home-form__input-wrap'>

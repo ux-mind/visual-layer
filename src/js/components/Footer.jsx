@@ -18,7 +18,20 @@ const links = [
 		]
 	},
 	{
-		name: 'Community'
+		name: 'Contact',
+		children: [
+			{ name: 'Contact Us', route: PUBLIC_ROUTES.contact_us }
+		]
+	}
+];
+
+const links_mobile = [
+	{
+		name: 'Company',
+		children: [
+			{ name: 'About Us', route: PUBLIC_ROUTES.about_us },
+			{ name: 'In Press', route: PUBLIC_ROUTES.in_press }
+		]
 	},
 	{
 		name: 'Contact',
@@ -105,13 +118,52 @@ const Footer = () => {
 					</div>
 					<div className="footer__middle-left">
 						<div className="footer__slogan">
-							Be part of our <span>community</span> and connect with us
+							Be part of our social <span>community</span> and connect with us
 						</div>
-						<Link className='footer__middle-logo' href="/">
-							<img alt="" src={logo_2} />
-						</Link>
+						<div className='footer__middle-wrap'>
+							<Link className='footer__middle-logo' href="/">
+								<img alt="" src={logo_2} />
+							</Link>
+							<ul className="footer__social-items">
+								{social_links.map((item, i) => {
+									return (
+										<li key={'footer-social-' + i}>
+											<a href={item.href}>
+												<img src={item.icon} />
+											</a>
+										</li>
+									);
+								})}
+							</ul>
+						</div>
 					</div>
-					<div className="footer__social">
+					<div className="footer-links-mobile">
+						{links_mobile.map((item) => {
+							return (
+								<div key={item.name} className='footer-links__wrap'>
+									<div className="footer-links__label">
+										{item.name}
+									</div>
+									{item.name_2 ? 
+									<div className="footer-links__label">
+										{item.name_2}
+									</div> : null}
+									{item.children && 
+									<ul>
+										{item.children.map((child) => {
+											return (
+												<li key={child.name} className="footer-links__item">
+													<Link to={child.route}>{child.name}</Link>
+												</li>
+											);
+										})}
+									</ul>
+									}
+								</div>
+							)
+						})}
+					</div>
+					{/*<div className="footer__social">
 						<div className="footer__social-label">
 							Find us on:
 						</div>
@@ -126,7 +178,7 @@ const Footer = () => {
 								);
 							})}
 						</ul>
-					</div>
+					</div>*/}
 				</div>
 				<div className="footer__bottom">
 					<div className='footer__credits'>
