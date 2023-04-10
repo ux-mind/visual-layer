@@ -40,12 +40,12 @@ const Intro = ({handleClick}) => {
     
 	return (
         <section className='home-intro'>
-            <a href='/' className='home-intro__right-button-1'>
+            <a href='https://github.com/visual-layer/fastdup' className='home-intro__right-button-1'>
                 <img className='home-intro__right-button-icon' alt="" src={intro_icon_2} />
                 <div>Join our GitHub!</div>
                 <img className='home-intro__right-button-arrow' alt="" src={arrow_blue} />
             </a>
-            <a href='/' className='home-intro__right-button-2'>
+            <a href='https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email' className='home-intro__right-button-2'>
                 <img className='home-intro__right-button-icon' alt="" src={intro_icon_3} />
                 <div>Join our Slack!</div>
                 <img className='home-intro__right-button-arrow' alt="" src={arrow_blue} />

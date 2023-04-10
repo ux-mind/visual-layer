@@ -31,23 +31,23 @@ const links = [
 const social_links = [
 	{
 		icon: footer_social_1,
-		href: 'https://github.com'
+		href: 'https://github.com/visual-layer/fastdup'
 	},
 	{
 		icon: footer_social_2,
-		href: 'https://github.com'
+		href: 'https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email'
 	},
 	{
 		icon: footer_social_3,
-		href: 'https://twitter.com'
+		href: 'https://twitter.com/visual_layer'
 	},
 	{
 		icon: footer_social_4,
-		href: 'https://linkendin.com'
+		href: 'https://il.linkedin.com/company/visual-layer'
 	},
 	{
 		icon: footer_social_5,
-		href: 'https://youtube.com'
+		href: 'https://www.youtube.com/@visual-layer4035/featured'
 	},
 ];
 
