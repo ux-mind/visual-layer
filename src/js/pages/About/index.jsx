@@ -29,22 +29,26 @@ const About = () => {
 			{
 				photo: members_1,
 				name: 'Prof. Joe Hellerstein',
-				description: 'Joseph M. Hellerstein is the Jim Gray Professorof Computer Science at the University of California, Berkeley, where has taught and led research teams in data systems since 1995.'
+				description: 'Joseph M. Hellerstein is the Jim Gray Professorof Computer Science at the University of California, Berkeley, where has taught and led research teams in data systems since 1995.',
+				linkedin: 'https://www.linkedin.com/in/joehellerstein/'
 			},
 			{
 				photo: members_2,
 				name: 'Dr. Ben Lorica',
-				description: 'Ben Lorica is a Principal at Gradient Flowand the editor of the widely-read Gradient Flow Newsletter. As a seasoned data scientist, he holds co-chair positions.'
+				description: 'Ben Lorica is a Principal at Gradient Flowand the editor of the widely-read Gradient Flow Newsletter. As a seasoned data scientist, he holds co-chair positions.',
+				linkedin: 'https://www.linkedin.com/in/benlorica/'
 			},
 			{
 				photo: members_5,
 				name: 'Sethu Balan Raman',
-				description: 'Sethu Balan Raman was until recently a senior director at Apple in charge of all of the deep learning infrastructure team, leading hundreds of engineers. Prior to that he was VP Engineering of Turi, acquired by Apple.'
+				description: 'Sethu Balan Raman was until recently a senior director at Apple in charge of all of the deep learning infrastructure team, leading hundreds of engineers. Prior to that he was VP Engineering of Turi, acquired by Apple.',
+				linkedin: 'https://www.linkedin.com/in/balansethuraman/'
 			},
 			{
 				photo: members_3,
 				name: 'Vijay Sharma',
-				description: 'Vijay Sharma is a seasoned entrepreneurbased in Bangalore and drives Visual Layer engagements in India.'
+				description: 'Vijay Sharma is a seasoned entrepreneur based in Bangalore and drives Visual Layer engagements in India.',
+				linkedin: 'https://www.linkedin.com/in/vijaysw/'
 			}
 		]
 	};
@@ -55,25 +59,29 @@ const About = () => {
 				photo: members_4,
 				name: 'Dr. Danny Bickson',
 				post: 'Co-founder & CEO',
-				description: 'Co-founder and VP EMEA of Turi (acquired by Apple). CMU Researcher. Sr. Mgr at Apple.'
+				description: 'Co-founder and VP EMEA of Turi (acquired by Apple). CMU Researcher. Sr. Mgr at Apple.',
+				linkedin: 'https://www.linkedin.com/in/dr-danny-bickson-835b32/'
 			},
 			{
 				photo: members_6,
 				name: 'Dr. Amir Alush',
 				post: 'Co-founder & CTO',
-				description: 'Co-founder and CTO of Brodmann17. Highly experienced in building CV/AI Groups and leading into production.'
+				description: 'Co-founder and CTO of Brodmann17. Highly experienced in building CV/AI Groups and leading into production.',
+				linkedin: 'https://www.linkedin.com/in/amiralush/'
 			},
 			{
 				photo: members_7,
 				name: 'Prof. Carlos Guestrin',
 				post: 'Co-founder & CSO',
-				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.'
+				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
+				linkedin: 'https://www.linkedin.com/in/carlos-guestrin-5352a869/'
 			},
 			{
 				photo: members_8,
 				name: 'Tal Weber',
 				post: 'CRO',
-				description: 'Tal Weber has 25+ years of Corporate Development experience and served in C-Level positions in several global entities.'
+				description: 'Tal Weber has 25+ years of Corporate Development experience and served in C-Level positions in several global entities.',
+				linkedin: 'https://www.linkedin.com/in/talweber/'
 			}
 		]
 	};
@@ -83,42 +91,50 @@ const About = () => {
 			{
 				photo: members_9,
 				name: 'Amir Markovitz',
-				description: 'Sr. Machine Learning Researcher'
+				description: 'Sr. Machine Learning Researcher',
+				linkedin: 'https://www.linkedin.com/in/amir-markovitz/'
 			},
 			{
 				photo: members_10,
 				name: 'Omer Nagar',
-				description: 'Machine Learning Researcher'
+				description: 'Machine Learning Researcher',
+				linkedin: 'https://www.linkedin.com/in/ovednagar/'
 			},
 			{
 				photo: members_11,
 				name: 'Tom Shani',
-				description: 'Machine Learning Engineer'
+				description: 'Machine Learning Engineer',
+				linkedin: 'https://www.linkedin.com/in/tom-shani-748777252/'
 			},
 			{
 				photo: members_12,
 				name: 'Gal Bar Nissan',
-				description: 'Staff Engineer'
+				description: 'Staff Engineer',
+				linkedin: 'https://www.linkedin.com/in/gal-bar-nissan-79441056/'
 			},
 			{
 				photo: members_13,
 				name: 'Adi Wishnitzer',
-				description: 'UI/UX Designer'
+				description: 'UI/UX Designer',
+				linkedin: 'https://www.linkedin.com/in/adi-wishnitzer/'
 			},
 			{
 				photo: members_14,
 				name: 'Dickson Neoh, Ph.D.',
-				description: 'Developer Relations Lead'
+				description: 'Developer Relations Lead',
+				linkedin: 'https://www.linkedin.com/in/dickson-neoh'
 			},
 			{
 				photo: members_15,
 				name: 'Gagandeep Gambhir',
-				description: 'Senior Frontend Engineer'
+				description: 'Senior Frontend Engineer',
+				linkedin: 'https://www.linkedin.com/in/gagandeep-gambhir-85a50645/'
 			},
 			{
 				photo: members_0,
 				name: 'Ofri Assif',
-				description: 'Office Admin'
+				description: 'Office Admin',
+				linkedin: 'https://www.linkedin.com/in/ofri-assif-0b5b20268/'
 			}
 		]
 	};
