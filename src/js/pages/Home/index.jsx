@@ -11,8 +11,18 @@ const Home = () => {
 	const handleClick = () => {
 		ref.current?.scrollIntoView({behavior: 'smooth'});
 	};
+	const handleScroll = (e) => {
+		console.log('scroll')
+		if(e.currentTarget.scrollTop === 0) {
+			setOnTop(true);
+			console.log(true)
+		} else {
+			setOnTop(false);
+			console.log(false)
+		}
+	};
 	return (
-		<main className="main home">
+		<main className="main home" onScroll={handleScroll}>
 			<Intro handleClick={handleClick} />
 			<Features />
 			<Product />

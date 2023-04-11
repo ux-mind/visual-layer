@@ -42,12 +42,6 @@ const Members = ({data}) => {
                                 <div className='about-members__description'>
                                     {item.description}
                                 </div>
-                                <a className='about-members__more' href=''>
-                                    <div>
-                                        Read more
-                                    </div>
-                                    <img alt='' src={link_down} />
-                                </a>
                             </div>
                         );
                     })}

@@ -7,13 +7,32 @@ import features_icon_3 from '../../../../assets/images/features-icon-3.svg';
 import features_icon_4 from '../../../../assets/images/features-icon-4.svg';
 
 const Features = () => {
+    const counterAdd = () => {
+        const interval = setInterval(() => {
+            if (document.querySelector('.home-features__counter')) {
+                const number = Number(document.querySelector('.home-features__counter').innerHTML.replaceAll(',', '')) + Math.floor(Math.random() * 100) + 1;     
+                const numberFormatter = Intl.NumberFormat('en-US');
+                const formatted = numberFormatter.format(number);
+                document.querySelector('.home-features__counter').innerHTML
+                = formatted;
+            } else {
+                clearInterval(interval);
+            }
+        }, 1000);
+    };
 	return (
         <section className='home-features'>
             <div className='container'>
                 <div className="home-features__content">
                     <div className="home-features__top">
                         <div className="home-features__number">
-                            <CountUp enableScrollSpy={true} end={50000000000} />+
+                            <CountUp
+                                className='home-features__counter'
+                                enableScrollSpy={true}
+                                scrollSpyOnce={true}
+                                end={50000000000}
+                                onStart={() => counterAdd()}
+                            />+
                         </div>
                         <div className="home-features__label">
                             Images processed by fastdup so far

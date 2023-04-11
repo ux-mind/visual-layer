@@ -16,7 +16,7 @@ const Loved = () => {
                         <div className='home-loved__item loved-item-1'>
                             <img alt="" src={loved_img_1} />
                             <div className='home-loved__item-text'>
-                                Fastdup worked great. Already on my way
+                                fastdup worked great. Already on my way
                             </div>
                             <div className='home-loved__item-name'>
                                 Suhail Doshi

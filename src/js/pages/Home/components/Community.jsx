@@ -11,7 +11,7 @@ const Community = () => {
                     <div className='home-community__items'>
                         <div className='home-community__item community-item-1'>
                             <div className='home-community__item-number'>
-                                50,000,000,000
+                                50,000,000,000+
                             </div>
                             <div className='home-community__item-text'>
                                 Images processed by fastdup so far
@@ -19,10 +19,10 @@ const Community = () => {
                         </div>
                         <div className='home-community__item community-item-2'>
                             <div className='home-community__item-number'>
-                                180,000
+                                180,000+
                             </div>
                             <div className='home-community__item-text'>
-                                fastdup github project users
+                                fastdup users
                             </div>
                         </div>
                         <div className='home-community__item community-item-3'>

@@ -5,7 +5,7 @@
 	&-intro {
 		overflow: hidden;
 		position: relative;
-		padding: 150px 0 69px;
+		padding: 159px 0 69px;
 		width: 100%;
 		background: linear-gradient(124deg, #4000A1 -3.42%, #A17FE0 69.34%, #59C173 115.23%);
 		.ticker__element div {
@@ -52,13 +52,19 @@
 			margin-top: 32px;
 		}
 		&__button {
+			font-family: 'Poppins';
 			background: #3B45FF;
 			border-radius: 15px;
 			padding: 16px 32px;
 			font-weight: 500;
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 24px;
 			margin-top: 62px;
+			transition: color 0.25s ease;
+		}
+		&__button:hover {
+			color: #8DF6F1;
+			transition: color 0.25s ease;
 		}
 		&__right {
 			width: 100%;
@@ -146,42 +152,46 @@
 			}
 		}
 		&__right-button-1 {
+			transition: all 0.25s ease;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			width: 105px;
-			height: 54px;
+			height: 56px;
 			background: #3B45FF;
 			border-radius: 60px;
 			position: fixed;
 			z-index: 5;
 			top: 370px;
-			right: -66px;
+			right: -55px;
 			cursor: pointer;
 			padding-left: 9px;
 			padding-right: 14px;
 			.home-intro__right-button-icon {
 				flex-shrink: 0;
-				width: 27px;
-				height: 27px;
+				width: 36px;
+				height: 36px;
 			}
 			.home-intro__right-button-arrow {
 				display: none;
 			}
 			div {
-				display: none;
+				display: block;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 14px;
 				line-height: 24px;
 				margin-left: 3px;
+				opacity: 0;
 			}
 		}
 		&__right-button-1:hover {
-			width: 212px;
+			transition: all 0.25s ease;
+			width: 261px;
 			right: 0;
 			div {
-				display: block;
+				opacity: 1;
+				transition: all 1.5s ease;
 			}
 			.home-intro__right-button-arrow {
 				display: block;
@@ -189,6 +199,7 @@
 			}
 		}
 		&__right-button-2 {
+			transition: all 0.25s ease;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -199,33 +210,37 @@
 			position: fixed;
 			z-index: 5;
 			top: 446px;
-			right: -66px;
+			right: -55px;
 			cursor: pointer;
 			padding-left: 14px;
 			padding-right: 14px;
 			.home-intro__right-button-icon {
 				flex-shrink: 0;
-				width: 19px;
-				height: 19px;
+				width: 31px;
+				height: 31px;
 			}
 			.home-intro__right-button-arrow {
 				display: none;
 				margin-left: 5px;
 			}
 			div {
-				display: none;
+				display: block;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 14px;
 				line-height: 24px;
 				margin-left: 5px;
+				opacity: 0;
 			}
 		}
 		&__right-button-2:hover {
+			transition: all 0.25s ease;
 			width: 212px;
 			right: 0;
 			div {
 				display: block;
+				opacity: 1;
+				transition: all 1.5s ease;
 			}
 			.home-intro__right-button-arrow {
 				display: block;
@@ -333,10 +348,10 @@
 				max-width: 406px;
 			}
 			.home-product__section-info {
-				max-width: 544px;
+				max-width: 564px;
 			}
 			.home-product__section-content {
-				gap: 142px;
+				gap: 122px;
 			}
 		}
 		&__title {
@@ -509,15 +524,21 @@
 			}
 		}
 		&__button {
+			font-family: 'Poppins';
 			width: 145px;
 			height: 59px;
 			background: #4F84F7;
 			border-radius: 15px;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 24px;
 			color: #FFFFFF;
+			transition: color 0.25s ease;
+		}
+		&__button:hover {
+			color: #8DF6F1;
+			transition: color 0.25s ease;
 		}
 	}
 }

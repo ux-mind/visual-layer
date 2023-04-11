@@ -13,14 +13,14 @@ const links = [
 	{
 		name: 'Company',
 		children: [
-			{ name: 'About Us', route: PUBLIC_ROUTES.about_us },
+			{ name: 'About Us', route: PUBLIC_ROUTES.about },
 			{ name: 'In Press', route: PUBLIC_ROUTES.in_press }
 		]
 	},
 	{
 		name: 'Contact',
 		children: [
-			{ name: 'Contact Us', route: PUBLIC_ROUTES.contact_us }
+			{ name: 'Contact Us', route: 'mailto:info@visual-layer.com' }
 		]
 	}
 ];
@@ -29,14 +29,14 @@ const links_mobile = [
 	{
 		name: 'Company',
 		children: [
-			{ name: 'About Us', route: PUBLIC_ROUTES.about_us },
+			{ name: 'About Us', route: PUBLIC_ROUTES.about },
 			{ name: 'In Press', route: PUBLIC_ROUTES.in_press }
 		]
 	},
 	{
 		name: 'Contact',
 		children: [
-			{ name: 'Contact Us', route: PUBLIC_ROUTES.contact_us }
+			{ name: 'Contact Us', route: 'mailto:info@visual-layer.com' }
 		]
 	}
 ];
@@ -71,7 +71,7 @@ const bottomLinks = [
 	},
 	{
 		name: 'Contact',
-		href: PUBLIC_ROUTES.contact
+		href: 'mailto:info@visual-layer.com'
 	},
 	{
 		name: 'Privacy policy',

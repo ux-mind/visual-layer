@@ -42,7 +42,7 @@ const Intro = ({handleClick}) => {
         <section className='home-intro'>
             <a href='https://github.com/visual-layer/fastdup' className='home-intro__right-button-1'>
                 <img className='home-intro__right-button-icon' alt="" src={intro_icon_2} />
-                <div>Join our GitHub!</div>
+                <div>Contribute our GitHub!</div>
                 <img className='home-intro__right-button-arrow' alt="" src={arrow_blue} />
             </a>
             <a href='https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email' className='home-intro__right-button-2'>
@@ -59,9 +59,11 @@ const Intro = ({handleClick}) => {
                         <div className='home-intro__description'>
                             You can focus on creating amazing products while we manage your visual data
                         </div>
-                        <button className='home-intro__button' onClick={handleClick}>
-                            Request a demo
-                        </button>
+                        <Link to={PUBLIC_ROUTES.request_a_demo}>
+                            <button className='home-intro__button'>
+                                Request a demo
+                            </button>
+                        </Link>
                         <div className='home-intro__developers'>
                             <img alt="" src={intro_icon} />
                             <span>From the creators of fastdup, XGBoost & Turi Create</span>
