@@ -28,7 +28,7 @@ const Members = ({data}) => {
                                 <div className='about-members__photo'>
                                     <img alt='' src={item.photo} />
                                 </div>
-                                <a className='about-members__name' href=''>
+                                <a className='about-members__name' href='{item.linkedin}'>
                                     <div>
                                         {item.name}
                                     </div>
