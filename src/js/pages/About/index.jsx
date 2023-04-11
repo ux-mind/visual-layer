@@ -37,14 +37,14 @@ const About = () => {
 				description: 'Ben Lorica is a Principal at Gradient Flowand the editor of the widely-read Gradient Flow Newsletter. As a seasoned data scientist, he holds co-chair positions.'
 			},
 			{
-				photo: members_3,
-				name: 'Vijay Sharma',
-				description: 'Vijay Sharma is a seasoned entrepreneurbased in Bangalore and drives Visual Layer engagements in India.'
-			},
-			{
 				photo: members_5,
 				name: 'Sethu Balan Raman',
 				description: 'Sethu Balan Raman was until recently a senior director at Apple in charge of all of the deep learning infrastructure team, leading hundreds of engineers. Prior to that he was VP Engineering of Turi, acquired by Apple.'
+			},
+			{
+				photo: members_3,
+				name: 'Vijay Sharma',
+				description: 'Vijay Sharma is a seasoned entrepreneurbased in Bangalore and drives Visual Layer engagements in India.'
 			}
 		]
 	};
@@ -55,7 +55,7 @@ const About = () => {
 				photo: members_4,
 				name: 'Dr. Danny Bickson',
 				post: 'Co-founder & CEO',
-				description: 'Co-founder and VP EMEA of Turi (acquired for $200M by Apple). CMU Researcher. Sr. Mgr at Apple.'
+				description: 'Co-founder and VP EMEA of Turi (acquired by Apple). CMU Researcher. Sr. Mgr at Apple.'
 			},
 			{
 				photo: members_6,
@@ -67,11 +67,11 @@ const About = () => {
 				photo: members_7,
 				name: 'Prof. Carlos Guestrin',
 				post: 'Co-founder & CSO',
-				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired for $200M by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.'
+				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.'
 			},
 			{
 				photo: members_8,
-				name: 'Dr. Danny Bickson 2',
+				name: 'Tal Weber',
 				post: 'CRO',
 				description: 'Tal Weber has 25+ years of Corporate Development experience and served in C-Level positions in several global entities.'
 			}
@@ -98,7 +98,7 @@ const About = () => {
 			{
 				photo: members_12,
 				name: 'Gal Bar Nissan',
-				description: 'Lead Full Stack Developer'
+				description: 'Staff Engineer'
 			},
 			{
 				photo: members_13,
@@ -113,7 +113,7 @@ const About = () => {
 			{
 				photo: members_15,
 				name: 'Gagandeep Gambhir',
-				description: 'Lead Front End Developer'
+				description: 'Senior Frontend Engineer'
 			},
 			{
 				photo: members_0,
