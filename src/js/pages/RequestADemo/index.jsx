@@ -64,7 +64,6 @@ const RequestADemo = () => {
 			const newFormValues = Object.assign({}, prev);
 
 			newFormValues[`${formValuesKey}`] = target.value;
-			console.log(newFormValues);
 
 			return newFormValues;
 		});
@@ -116,8 +115,8 @@ const RequestADemo = () => {
 				newFormErrors['phone'] = 'Not valid phone number';
 				return newFormErrors;
 				});
+				errorSubmit = true;
 			}
-			errorSubmit = true;
 		}
 
 		
@@ -143,6 +142,19 @@ const RequestADemo = () => {
 				formData.append('vl-company', formValues.company);
 				formData.append('vl-building', formValues.building);
 
+				const html = document.documentElement;
+				html.classList.add('is-locked');
+				setIsModalOpen(true);
+				setFormValues({
+					name: '',
+					surname: '',
+					email: '',
+					phone: '',
+					job: '',
+					company: '',
+					building: '',
+				});
+
 				let res = await fetch("send.php", {
 					method: "POST",
 					body: formData,
@@ -150,26 +162,16 @@ const RequestADemo = () => {
 
 				console.log(res);
 				if (res.status === 200) {
-					setFormValues({
-						name: '',
-						surname: '',
-						email: '',
-						phone: '',
-						job: '',
-						company: '',
-						building: '',
-					});
-					const html = document.documentElement;
-					html.classList.add('is-locked');
-					setIsModalOpen(true);
+					console.log('success');
 				} else {
-					alert("Some error occured");
+					console.log('error');
 				}
 			} catch (err) {
 			console.log(err);
 			}
 		} else {
-			console.log(formErrors);
+			console.log('error');
+			console.log(errorSubmit);
 		}
 	};
 
