@@ -75,11 +75,11 @@ const bottomLinks = [
 	},
 	{
 		name: 'Privacy policy',
-		href: PUBLIC_ROUTES.privacy_policy
+		href: ''
 	},
 	{
 		name: 'Terms of Use',
-		href: PUBLIC_ROUTES.terms_of_use
+		href: ''
 	}
 ];
 
