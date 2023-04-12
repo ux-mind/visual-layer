@@ -26,7 +26,7 @@ const links = [
 	{
 		name: 'Community',
 		children: [
-			{ name: 'Join GitHub Community', href: '#', icon: menu_icon_3 },
+			{ name: 'Contribute on Github', href: '#', icon: menu_icon_3 },
 			{ name: 'Join Slack Community', href: '#', icon: menu_icon_4 }
 		]
 	},

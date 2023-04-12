@@ -7,7 +7,7 @@
 	src: font('DMSans-Regular.woff') format('woff'), font('DMSans-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
+	font-display: block;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 	src: font('DMSans-Medium.woff') format('woff'), font('DMSans-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
-	font-display: swap;
+	font-display: block;
 }
 
 @font-face {
@@ -23,7 +23,7 @@
 	src: font('Poppins-Regular.woff') format('woff'), font('Poppins-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
+	font-display: block;
 }
 
 @font-face {
@@ -31,7 +31,7 @@
 	src: font('Poppins-Medium.woff') format('woff'), font('Poppins-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
-	font-display: swap;
+	font-display: block;
 }
 
 @font-face {
@@ -39,5 +39,5 @@
 	src: font('Poppins-SemiBold.woff') format('woff'), font('Poppins-SemiBold.woff2') format('woff2');
 	font-weight: 600;
 	font-style: normal;
-	font-display: swap;
+	font-display: block;
 }

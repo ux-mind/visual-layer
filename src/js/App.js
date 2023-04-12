@@ -12,6 +12,8 @@ const ScrollToTop = () => {
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		const html = document.documentElement;
+		html.classList.remove('is-locked');
 	}, [pathname]);
 
 	return null;

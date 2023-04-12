@@ -77,7 +77,7 @@ const RequestADemo = () => {
 		console.log('formValues')
 		console.log(formValues)
 		Object.keys(formValues).map((key) => {
-			if (!formValues[key]) {
+			if (!formValues[key] && key !== 'phone') {
 				errorSubmit = true;
 				setFormErrors((prev) => {
 					const newFormErrors = Object.assign({}, prev);
