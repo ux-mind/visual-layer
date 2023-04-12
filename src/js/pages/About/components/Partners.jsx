@@ -5,6 +5,7 @@ import partner_2 from '../../../../assets/images/partner-2.png';
 import partner_3 from '../../../../assets/images/partner-3.png';
 import partner_4 from '../../../../assets/images/partner-4.png';
 import partner_5 from '../../../../assets/images/partner-5.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Partners = () => {
 
@@ -41,17 +42,17 @@ const Partners = () => {
                     <div className='about-partners__items'>
                         {partners.map((item, i) => {
                             return (
-                                <img className='loop-collection' key={item.id + 1} alt='' src={item.img} />
+                                <LazyLoadImage className='loop-collection' key={item.id + 1} alt='' src={item.img} />
                             )
                         })}
                         {partners.map((item, i) => {
                             return (
-                                <img className='loop-collection' key={item.id + 2} alt='' src={item.img} />
+                                <LazyLoadImage className='loop-collection' key={item.id + 2} alt='' src={item.img} />
                             )
                         })}
                         {partners.map((item, i) => {
                             return (
-                                <img className='loop-collection' key={item.id + 3} alt='' src={item.img} />
+                                <LazyLoadImage className='loop-collection' key={item.id + 3} alt='' src={item.img} />
                             )
                         })}
                     </div>

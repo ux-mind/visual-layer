@@ -5,6 +5,7 @@ import Product from './components/Product';
 import Community from './components/Community';
 import Loved from './components/Loved';
 import Form from './components/Form';
+import Header from '../../components/Header';
 
 const Home = () => {
 	const ref = useRef(null);
@@ -22,6 +23,8 @@ const Home = () => {
 		}
 	};
 	return (
+		<>
+		<Header />
 		<main className="main home" onScroll={handleScroll}>
 			<Intro handleClick={handleClick} />
 			<Features />
@@ -31,6 +34,7 @@ const Home = () => {
 			<div ref={ref}></div>
 			<Form />
 		</main>
+		</>
 	);
 };
 

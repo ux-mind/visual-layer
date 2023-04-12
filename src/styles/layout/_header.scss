@@ -19,6 +19,12 @@
 	&__content.black-header {
 		color: black;
 	}
+	&__content.request-header {
+		justify-content: start;
+		.header-links {
+			margin-left: 90px;
+		}
+	}
 	&-links {
 		display: flex;
 		align-items: center;
@@ -45,6 +51,22 @@
 			.header-links__connect {
 				display: none;
 			}
+		}
+		&__item::after {
+			position: absolute;
+			top: 23px;
+			left: 0;
+			content: '';
+			display: block;
+			width: 51px;
+			height: 1px;
+			background: #FAFAFF;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+		&__item:hover::after {
+			opacity: 1;
+			transition: opacity 0.3s ease;
 		}
 		&__item:hover {
 			.header-links__dropdown {
@@ -79,6 +101,7 @@
 				width: 100%;
 				white-space: nowrap;
 				display: flex;
+				align-items: center;
 				img {
 					margin-right: 10px;
 				}
@@ -112,7 +135,7 @@
 		border-radius: 15px;
 		padding: 16px 32px;
 		font-weight: 500;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 24px;
 		transition: color 0.25s ease;
 	}
@@ -122,6 +145,7 @@
 	}
 	&__burger {
 		display: none;
+		margin-left: auto;
 	}
 }
 
@@ -150,8 +174,6 @@
 			top: 0;
 			left: 0;
 			padding-top: 17px;
-			padding-left: 34px;
-			padding-right: 27px;
 			&__top {
 				display: flex;
 				justify-content: space-between;
@@ -167,6 +189,8 @@
 			}
 			&__content {
 				margin-top: 65px;
+				padding-left: 30px;
+				align-items: center;
 				li {
 					a {
 						font-family: 'Poppins';

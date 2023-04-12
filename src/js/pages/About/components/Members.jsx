@@ -5,6 +5,7 @@ import PUBLIC_ROUTES from '../../../data/publicRoutes';
 
 import linkedin from '../../../../assets/images/linkedin.svg';
 import link_down from '../../../../assets/images/link-down.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Members = ({data}) => {
     
@@ -26,13 +27,13 @@ const Members = ({data}) => {
                         return (
                             <div key={item.name} className='about-members__item'>
                                 <div className='about-members__photo'>
-                                    <img alt='' src={item.photo} />
+                                    <LazyLoadImage alt='' src={item.photo} />
                                 </div>
                                 <a className='about-members__name' href={item.linkedin}>
                                     <div>
                                         {item.name}
                                     </div>
-                                    <img alt='' src={linkedin} />
+                                    <LazyLoadImage alt='' src={linkedin} />
                                 </a>
                                 {item.post ? 
                                 <div className='about-members__post'>

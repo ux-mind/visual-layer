@@ -82,9 +82,9 @@ const Header = () => {
 		e.target.parentElement.classList.toggle("submenu-opened");
 	}
 
-	useEffect(() => {
+	/*useEffect(() => {
 		setUpdated(prevState => !prevState);
-	}, [useLocation().pathname]);
+	}, [useLocation().pathname]);*/
 
 	const [onTop, setOnTop] = useState(true);
 	useEffect(() => {
@@ -99,13 +99,16 @@ const Header = () => {
 		<>
 			<header className={`header ${onTop ? 'header-top' : ''}`}>
 				<div className="container">
-					<div className={`header__content ${location.pathname === PUBLIC_ROUTES.about && onTop ? 'black-header' : ''}`}>
+					<div className={`header__content ${location.pathname === PUBLIC_ROUTES.about && onTop ? 'black-header' : ''} ${location.pathname === PUBLIC_ROUTES.request_a_demo ? 'request-header' : ''}`}>
 						<Link className='header__logo-wrap' to="/">
 							<img alt="" src={location.pathname === PUBLIC_ROUTES.about && onTop ? logo_black : logo} />
 						</Link>
 						<ul className="header-links">
 							{links.map(({ name, href, children }) => (
-								<li className="header-links__item" key={name}>
+								<li
+									onMouseEnter={(e) => e.target.style.pointerEvents = "auto"}
+									className={`header-links__item`} key={name}
+								>
 									<Link to={href}>
 										{name}
 										{children ?
@@ -144,7 +147,7 @@ const Header = () => {
 								Request a demo
 							</button>
 						</Link>
-						<img onClick={menuOpen} className="header__burger" alt="" src={location.pathname === PUBLIC_ROUTES.about ? burger_black : burger} />
+						<img onClick={menuOpen} className="header__burger" alt="" src={location.pathname === PUBLIC_ROUTES.about && onTop ? burger_black : burger} />
 					</div>
 				</div>
 				{menuOpened ?
@@ -159,20 +162,20 @@ const Header = () => {
 						<ul className='modal-menu__content'>
 							{links_mobile.map((item) => {
 								return <li key={item.name}>
-									<a href={item.href} onClick={!item.href ? (e) => handleClick(e) : null}>
+									<Link to={item.href} onClick={!item.href ? (e) => handleClick(e) : null}>
 										{item.name}
 										{item.children ?
 										<img alt='' src={mobile_arrow_down} />
 										: null}
-									</a>
+									</Link>
 									{item.children ?
 									<ul className='modal-menu__children'>
 										{item.children.map((child) => {
 											return (
 												<li>
-													<a href={child.href}>
+													<Link to={child.href}>
 														{child.name}
-													</a>
+													</Link>
 												</li>	
 											);
 										})}

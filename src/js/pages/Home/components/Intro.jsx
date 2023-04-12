@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { VerticalTicker, HorizontalTicker } from "react-infinite-ticker";
 import PUBLIC_ROUTES from '../../../data/publicRoutes';
@@ -13,6 +13,21 @@ import partner_4 from '../../../../assets/images/partner-4.png';
 import partner_5 from '../../../../assets/images/partner-5.png';
 import arrow_blue from '../../../../assets/images/arrow-blue.svg';
 import hero_img from '../../../../assets/images/hero.gif';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+function useOutsideAlerter(ref) {
+    useEffect(() => {
+        function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+            ref.current.classList.remove('link-opened');
+        }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [ref]);
+}
 
 const Intro = ({handleClick}) => {
     const [partners, setPartners] = useState([
@@ -37,15 +52,32 @@ const Intro = ({handleClick}) => {
             img: partner_5
         }
     ]);
+
+    const handleLinkClick = (e) => {
+        if (!e.target.classList.contains('link-opened') && !e.target.parentElement.classList.contains('link-opened')) {
+            e.preventDefault();
+        }
+        if (e.target.classList.contains('right-button')) {
+            e.target.classList.add('link-opened');
+        } else {
+            e.target.parentElement.classList.add('link-opened');
+        }
+    }
+
+    const wrapperRef1 = useRef(null);
+    useOutsideAlerter(wrapperRef1);
+
+    const wrapperRef2 = useRef(null);
+    useOutsideAlerter(wrapperRef2);
     
 	return (
         <section className='home-intro'>
-            <a href='https://github.com/visual-layer/fastdup' className='home-intro__right-button-1'>
+            <a ref={wrapperRef1} onClick={(e) => handleLinkClick(e)} href='https://github.com/visual-layer/fastdup' className='right-button home-intro__right-button-1'>
                 <img className='home-intro__right-button-icon' alt="" src={intro_icon_2} />
                 <div>Contribute on GitHub!</div>
                 <img className='home-intro__right-button-arrow' alt="" src={arrow_blue} />
             </a>
-            <a href='https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email' className='home-intro__right-button-2'>
+            <a ref={wrapperRef2} onClick={(e) => handleLinkClick(e)} href='https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email' className='right-button home-intro__right-button-2'>
                 <img className='home-intro__right-button-icon' alt="" src={intro_icon_3} />
                 <div>Join our Slack!</div>
                 <img className='home-intro__right-button-arrow' alt="" src={arrow_blue} />
@@ -69,7 +101,7 @@ const Intro = ({handleClick}) => {
                             <span>From the creators of fastdup, XGBoost & Turi Create</span>
                         </div>
                     </div>
-                    <div className='home-intro__animation'></div>
+                    {/*<div className='home-intro__animation'></div>*/}
                 </div>
                 <div className='home-intro__bottom'>
                     <div className='home-intro__bottom-title'>
@@ -80,17 +112,17 @@ const Intro = ({handleClick}) => {
             <div className='home-intro__bottom-content'>
                 {partners.map((item, i) => {
                     return (
-                        <img className='loop-collection' key={item.id + 1} alt='' src={item.img} />
+                        <LazyLoadImage className='loop-collection' key={item.id + 1} alt='' src={item.img} />
                     )
                 })}
                 {partners.map((item, i) => {
                     return (
-                        <img className='loop-collection' key={item.id + 2} alt='' src={item.img} />
+                        <LazyLoadImage className='loop-collection' key={item.id + 2} alt='' src={item.img} />
                     )
                 })}
                 {partners.map((item, i) => {
                     return (
-                        <img className='loop-collection' key={item.id + 3} alt='' src={item.img} />
+                        <LazyLoadImage className='loop-collection' key={item.id + 3} alt='' src={item.img} />
                     )
                 })}
             </div>

@@ -20,6 +20,7 @@ import members_12 from '../../../assets/images/members-12.png';
 import members_13 from '../../../assets/images/members-13.png';
 import members_14 from '../../../assets/images/members-14.png';
 import members_15 from '../../../assets/images/members-15.png';
+import Header from '../../components/Header';
 
 const About = () => {
 	const data_1 = {
@@ -59,21 +60,21 @@ const About = () => {
 				photo: members_4,
 				name: 'Dr. Danny Bickson',
 				post: 'Co-founder & CEO',
-				description: 'Co-founder and VP EMEA of Turi (acquired by Apple). CMU Researcher. Sr. Mgr at Apple.',
+				description: 'Former Co-founder and VP EMEA of Turi (acquired for $200M by Apple). CMU Researcher. Sr. Mgr at Apple.',
 				linkedin: 'https://www.linkedin.com/in/dr-danny-bickson-835b32/'
 			},
 			{
 				photo: members_6,
 				name: 'Dr. Amir Alush',
 				post: 'Co-founder & CTO',
-				description: 'Co-founder and CTO of Brodmann17. Highly experienced in building CV/AI Groups and leading into production.',
+				description: 'Former Co-founder and CTO of Brodmann17. Highly experienced in building CV/AI Groups and leading into production.',
 				linkedin: 'https://www.linkedin.com/in/amiralush/'
 			},
 			{
 				photo: members_7,
 				name: 'Prof. Carlos Guestrin',
 				post: 'Co-founder & CSO',
-				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
+				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired for $200M by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
 				linkedin: 'https://www.linkedin.com/in/carlos-guestrin-5352a869/'
 			},
 			{
@@ -109,7 +110,7 @@ const About = () => {
 			{
 				photo: members_12,
 				name: 'Gal Bar Nissan',
-				description: 'Staff Engineer',
+				description: 'Lead Full Stack Developer',
 				linkedin: 'https://www.linkedin.com/in/gal-bar-nissan-79441056/'
 			},
 			{
@@ -127,7 +128,7 @@ const About = () => {
 			{
 				photo: members_15,
 				name: 'Gagandeep Gambhir',
-				description: 'Senior Frontend Engineer',
+				description: 'Lead Front End Developer',
 				linkedin: 'https://www.linkedin.com/in/gagandeep-gambhir-85a50645/'
 			},
 			{
@@ -139,6 +140,8 @@ const About = () => {
 		]
 	};
 	return (
+		<>
+		<Header />
 		<main className="main about">
 			<Intro />
 			<Members data={data_1} />
@@ -147,6 +150,7 @@ const About = () => {
 			<Gallery />
 			<Partners />
 		</main>
+		</>
 	);
 };
 

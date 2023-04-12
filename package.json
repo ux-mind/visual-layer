@@ -15,6 +15,7 @@
 		"pgn-to-fen": "^0.0.0",
 		"react-countup": "^6.4.2",
 		"react-infinite-ticker": "^2.1.1",
+		"react-lazy-load-image-component": "^1.5.6",
 		"react-responsive": "^9.0.2",
 		"react-ticker": "^1.3.2",
 		"stockfish": "^15.0.0"

@@ -3,6 +3,7 @@ import React from 'react';
 import loved_img_1 from '../../../../assets/images/loved-img-1.png';
 import loved_img_2 from '../../../../assets/images/loved-img-2.png';
 import loved_img_3 from '../../../../assets/images/loved-img-3.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Loved = () => {
 	return (
@@ -14,7 +15,7 @@ const Loved = () => {
                     </div>
                     <div className='home-loved__items'>
                         <div className='home-loved__item loved-item-1'>
-                            <img alt="" src={loved_img_1} />
+                            <LazyLoadImage alt="" src={loved_img_1} />
                             <div className='home-loved__item-text'>
                                 fastdup worked great. Already on my way
                             </div>
@@ -26,7 +27,7 @@ const Loved = () => {
                             </div>
                         </div>
                         <div className='home-loved__item loved-item-2'>
-                            <img alt="" src={loved_img_2} />
+                            <LazyLoadImage alt="" src={loved_img_2} />
                             <div className='home-loved__item-text'>
                                 Meesho is using fastdup to curate 1,000,000,000 images of our digital catalog
                             </div>
@@ -38,9 +39,9 @@ const Loved = () => {
                             </div>
                         </div>
                         <div className='home-loved__item loved-item-3'>
-                            <img alt="" src={loved_img_3} />
+                            <LazyLoadImage alt="" src={loved_img_3} />
                             <div className='home-loved__item-text'>
-                                Everyone should de-duplicate their images. I found fastdup to work pretty well
+                                Everyone should de-duplicate their images
                             </div>
                             <div className='home-loved__item-name'>
                                 Eric Wallace

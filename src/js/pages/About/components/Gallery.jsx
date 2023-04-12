@@ -9,6 +9,7 @@ import gallery_img_3 from '../../../../assets/images/about-img-3.png';
 import gallery_img_4 from '../../../../assets/images/about-img-4.png';
 import gallery_img_5 from '../../../../assets/images/about-img-5.png';
 import gallery_img_6 from '../../../../assets/images/about-img-6.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Gallery = ({data}) => {
     
@@ -17,22 +18,22 @@ const Gallery = ({data}) => {
             <div className="container">
                 <div className="about-gallery__items">
                     <div className='about-gallery__item about-img-1'>
-                        <img alt='' src={gallery_img_1} />
+                        <LazyLoadImage alt='' src={gallery_img_1} />
                     </div>
                     <div className='about-gallery__item about-img-2'>
-                        <img alt='' src={gallery_img_2} />
+                        <LazyLoadImage alt='' src={gallery_img_2} />
                     </div>
                     <div className='about-gallery__item about-img-3'>
-                        <img alt='' src={gallery_img_3} />
+                        <LazyLoadImage alt='' src={gallery_img_3} />
                     </div>
                     <div className='about-gallery__item about-img-4'>
-                        <img alt='' src={gallery_img_4} />
+                        <LazyLoadImage alt='' src={gallery_img_4} />
                     </div>
                     <div className='about-gallery__item about-img-5'>
-                        <img alt='' src={gallery_img_5} />
+                        <LazyLoadImage alt='' src={gallery_img_5} />
                     </div>
                     <div className='about-gallery__item about-img-6'>
-                        <img alt='' src={gallery_img_6} />
+                        <LazyLoadImage alt='' src={gallery_img_6} />
                     </div>
                 </div>
             </div>

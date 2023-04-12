@@ -188,9 +188,9 @@ const Footer = () => {
 						{bottomLinks.map((item) => {
 							return (
 								<li key={item.name}>
-									<a href={item.href}>
+									<Link to={item.href}>
 										{item.name}
-									</a>
+									</Link>
 								</li>
 							)
 						})}

@@ -5,6 +5,7 @@ import features_icon_1 from '../../../../assets/images/features-icon-1.svg';
 import features_icon_2 from '../../../../assets/images/features-icon-2.svg';
 import features_icon_3 from '../../../../assets/images/features-icon-3.svg';
 import features_icon_4 from '../../../../assets/images/features-icon-4.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Features = () => {
     const counterAdd = () => {
@@ -32,35 +33,35 @@ const Features = () => {
                                 scrollSpyOnce={true}
                                 end={50000000000}
                                 onStart={() => counterAdd()}
-                            />+
+                            />
                         </div>
                         <div className="home-features__label">
-                            Images processed by fastdup so far
+                            Images processed so far
                         </div>
                     </div>
                     <div className="home-features__items">
                         <div className="home-features__item">
-                            <img className="home-features__item-icon" alt="" src={features_icon_1} />
+                            <LazyLoadImage className="home-features__item-icon" alt="" src={features_icon_1} />
                             <div className="home-features__item-text">
                                 Save up to 95% of your labeling costs
                             </div>
                         </div>
                         <div className="home-features__item">
-                            <img className="home-features__item-icon" alt="" src={features_icon_2} />
+                            <LazyLoadImage className="home-features__item-icon" alt="" src={features_icon_2} />
                             <div className="home-features__item-text">
                                 Manage billions of images and videos
                             </div>
                         </div>
                         <div className="home-features__item">
-                            <img className="home-features__item-icon" alt="" src={features_icon_3} />
+                            <LazyLoadImage className="home-features__item-icon" alt="" src={features_icon_3} />
                             <div className="home-features__item-text">
                                 Accelerate your product development by x20
                             </div>
                         </div>
                         <div className="home-features__item">
-                            <img className="home-features__item-icon" alt="" src={features_icon_4} />
+                            <LazyLoadImage className="home-features__item-icon" alt="" src={features_icon_4} />
                             <div className="home-features__item-text">
-                                Improve 50% on data and model quality
+                                Improve your data and model by up to 50%
                             </div>
                         </div>
                     </div>
