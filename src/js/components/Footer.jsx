@@ -67,7 +67,7 @@ const social_links = [
 const bottomLinks = [
 	{
 		name: 'Company',
-		href: PUBLIC_ROUTES.company
+		href: PUBLIC_ROUTES.about
 	},
 	{
 		name: 'Contact',
