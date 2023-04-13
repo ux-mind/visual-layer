@@ -26,8 +26,8 @@ const links = [
 	{
 		name: 'Community',
 		children: [
-			{ name: 'Contribute on Github', href: '#', icon: menu_icon_3 },
-			{ name: 'Join our Slack', href: '#', icon: menu_icon_4 }
+			{ name: 'Contribute on Github', href: 'https://github.com/visual-layer/fastdup', icon: menu_icon_3 },
+			{ name: 'Join our Slack', href: 'https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email', icon: menu_icon_4 }
 		]
 	},
 	{
@@ -47,8 +47,8 @@ const links_mobile = [
 	{
 		name: 'Community',
 		children: [
-			{ name: 'Contribute on Github', href: '#' },
-			{ name: 'Join our Slack', href: '#' }
+			{ name: 'Contribute on Github', href: 'https://github.com/visual-layer/fastdup' },
+			{ name: 'Join our Slack', href: 'https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email' }
 		]
 	},
 	{
