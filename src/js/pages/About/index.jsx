@@ -60,7 +60,7 @@ const About = () => {
 				photo: members_4,
 				name: 'Dr. Danny Bickson',
 				post: 'Co-founder & CEO',
-				description: 'Former Co-founder and VP EMEA of Turi (acquired for $200M by Apple). CMU Researcher. Sr. Mgr at Apple.',
+				description: 'Former Co-founder and VP EMEA of Turi (acquired by Apple). CMU Researcher. Sr. Mgr at Apple.',
 				linkedin: 'https://www.linkedin.com/in/dr-danny-bickson-835b32/'
 			},
 			{
@@ -74,7 +74,7 @@ const About = () => {
 				photo: members_7,
 				name: 'Prof. Carlos Guestrin',
 				post: 'Co-founder & CSO',
-				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired for $200M by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
+				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
 				linkedin: 'https://www.linkedin.com/in/carlos-guestrin-5352a869/'
 			},
 			{
