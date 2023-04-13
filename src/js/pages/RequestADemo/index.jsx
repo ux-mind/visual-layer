@@ -307,7 +307,7 @@ const RequestADemo = () => {
 							</div>
 							<button onClick={handleFormSubmit} className='requestademo__form-button'>Submit</button>
 							<div className='requestademo__form-text'>
-								By submitting this form, I agree to the <a href='#'>Terms&nbsp;of&nbsp;Use</a> and acknowledge that my information will be used in accordance with the <a href='#'>Privacy&nbsp;Policy</a>.
+								By submitting this form, I agree to the Terms&nbsp;of&nbsp;Use and acknowledge that my information will be used in accordance with the Privacy&nbsp;Policy.
 							</div>
 						</form>
 						{isModalOpen ?
