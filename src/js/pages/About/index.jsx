@@ -25,7 +25,7 @@ import Header from '../../components/Header';
 const About = () => {
 	const data_1 = {
 		title: 'Advisory board members',
-		subtitle: 'The best and brightest innovators advise our leaders.',
+		subtitle: 'The best and brightest innovators advise our leaders',
 		members: [
 			{
 				photo: members_1,
