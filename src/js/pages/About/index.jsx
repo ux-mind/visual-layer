@@ -20,6 +20,7 @@ import members_12 from '../../../assets/images/members-12.png';
 import members_13 from '../../../assets/images/members-13.png';
 import members_14 from '../../../assets/images/members-14.png';
 import members_15 from '../../../assets/images/members-15.png';
+import members_16 from '../../../assets/images/members-16.png';
 import Header from '../../components/Header';
 
 const About = () => {
@@ -60,7 +61,7 @@ const About = () => {
 				photo: members_4,
 				name: 'Dr. Danny Bickson',
 				post: 'Co-founder & CEO',
-				description: 'Former Co-founder and VP EMEA of Turi (acquired by Apple). CMU Researcher. Sr. Mgr at Apple.',
+				description: 'Former Co-founder and VP EMEA of Turi, acquired by Apple. CMU Researcher. Sr. Mgr at Apple.',
 				linkedin: 'https://www.linkedin.com/in/dr-danny-bickson-835b32/'
 			},
 			{
@@ -74,7 +75,7 @@ const About = () => {
 				photo: members_7,
 				name: 'Prof. Carlos Guestrin',
 				post: 'Co-founder & CSO',
-				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
+				description: 'Stanford Prof, Co-founder and CEO of Turi, acquired by Apple. Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
 				linkedin: 'https://www.linkedin.com/in/carlos-guestrin-5352a869/'
 			},
 			{
@@ -132,7 +133,7 @@ const About = () => {
 				linkedin: 'https://www.linkedin.com/in/gagandeep-gambhir-85a50645/'
 			},
 			{
-				photo: members_0,
+				photo: members_16,
 				name: 'Ofri Assif',
 				post: 'Office Admin',
 				linkedin: 'https://www.linkedin.com/in/ofri-assif-0b5b20268/'
