@@ -26,8 +26,8 @@ const links = [
 	{
 		name: 'Community',
 		children: [
-			{ name: 'Contribute on Github', href: '#', icon: menu_icon_3 },
-			{ name: 'Join Slack Community', href: '#', icon: menu_icon_4 }
+			{ name: 'Contribute on Github', href: 'https://github.com/visual-layer/fastdup', icon: menu_icon_3 },
+			{ name: 'Join our Slack', href: 'https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email', icon: menu_icon_4 }
 		]
 	},
 	{
@@ -40,15 +40,15 @@ const links_mobile = [
 	{
 		name: 'Company',
 		children: [
-			{ name: 'About Us', href: PUBLIC_ROUTES.about },
-			{ name: 'In Press', href: PUBLIC_ROUTES.in_press }
+			{ name: 'About Us', href: PUBLIC_ROUTES.about, icon: menu_icon_1 },
+			{ name: 'In Press', href: PUBLIC_ROUTES.in_press, icon: menu_icon_2 }
 		]
 	},
 	{
 		name: 'Community',
 		children: [
-			{ name: 'Join GitHub Community', href: '#' },
-			{ name: 'Join Slack Community', href: '#' }
+			{ name: 'Contribute on Github', href: 'https://github.com/visual-layer/fastdup', icon: menu_icon_3 },
+			{ name: 'Join our Slack', href: 'https://visualdatabase.slack.com/join/shared_invite/zt-19jaydbjn-lNDEDkgvSI1QwbTXSY6dlA#/shared-invite/email', icon: menu_icon_4 }
 		]
 	},
 	{
@@ -174,6 +174,7 @@ const Header = () => {
 											return (
 												<li>
 													<Link to={child.href}>
+														{child.icon ? <img alt='' src={child.icon} /> : ''}
 														{child.name}
 													</Link>
 												</li>	

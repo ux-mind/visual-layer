@@ -136,7 +136,7 @@ const Form = () => {
                         </div>
                         <div className='home-form__row'>
                             <div className='home-form__input-wrap'>
-                                <input name='email' onChange={handleInputChange} className='home-form__input' type='text'></input>
+                                <input value={formValues.email} name='email' onChange={handleInputChange} className='home-form__input' type='text'></input>
                                 {formErrors.email ?
 									<span className="home-form__form-error">
 									{formErrors.email}

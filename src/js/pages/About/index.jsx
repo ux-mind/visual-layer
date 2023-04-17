@@ -30,7 +30,7 @@ const About = () => {
 			{
 				photo: members_1,
 				name: 'Prof. Joe Hellerstein',
-				description: 'Joseph M. Hellerstein is the Jim Gray Professorof Computer Science at the University of California, Berkeley, where has taught and led research teams in data systems since 1995.',
+				description: 'Joseph M. Hellerstein is the Jim Gray Professor of Computer Science at the University of California, Berkeley, where has taught and led research teams in data systems since 1995.',
 				linkedin: 'https://www.linkedin.com/in/joehellerstein/'
 			},
 			{
@@ -60,7 +60,7 @@ const About = () => {
 				photo: members_4,
 				name: 'Dr. Danny Bickson',
 				post: 'Co-founder & CEO',
-				description: 'Former Co-founder and VP EMEA of Turi (acquired for $200M by Apple). CMU Researcher. Sr. Mgr at Apple.',
+				description: 'Former Co-founder and VP EMEA of Turi (acquired by Apple). CMU Researcher. Sr. Mgr at Apple.',
 				linkedin: 'https://www.linkedin.com/in/dr-danny-bickson-835b32/'
 			},
 			{
@@ -74,7 +74,7 @@ const About = () => {
 				photo: members_7,
 				name: 'Prof. Carlos Guestrin',
 				post: 'Co-founder & CSO',
-				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired for $200M by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
+				description: 'Stanford Prof, Co-founder and CEO of Turi (acquired by Apple). Sr. Dir. at Apple. Deep Learning Infra Team Pioneer.',
 				linkedin: 'https://www.linkedin.com/in/carlos-guestrin-5352a869/'
 			},
 			{
@@ -92,49 +92,49 @@ const About = () => {
 			{
 				photo: members_9,
 				name: 'Amir Markovitz',
-				description: 'Sr. Machine Learning Researcher',
+				post: 'Sr. Machine Learning Researcher',
 				linkedin: 'https://www.linkedin.com/in/amir-markovitz/'
 			},
 			{
 				photo: members_10,
 				name: 'Omer Nagar',
-				description: 'Machine Learning Researcher',
+				post: 'Machine Learning Researcher',
 				linkedin: 'https://www.linkedin.com/in/ovednagar/'
 			},
 			{
 				photo: members_11,
 				name: 'Tom Shani',
-				description: 'Machine Learning Engineer',
+				post: 'Machine Learning Engineer',
 				linkedin: 'https://www.linkedin.com/in/tom-shani-748777252/'
 			},
 			{
 				photo: members_12,
 				name: 'Gal Bar Nissan',
-				description: 'Lead Full Stack Developer',
+				post: 'Lead Full Stack Developer',
 				linkedin: 'https://www.linkedin.com/in/gal-bar-nissan-79441056/'
 			},
 			{
 				photo: members_13,
 				name: 'Adi Wishnitzer',
-				description: 'UI/UX Designer',
+				post: 'UI/UX Designer',
 				linkedin: 'https://www.linkedin.com/in/adi-wishnitzer/'
 			},
 			{
 				photo: members_14,
 				name: 'Dickson Neoh, Ph.D.',
-				description: 'Developer Relations Lead',
+				post: 'Developer Relations Lead',
 				linkedin: 'https://www.linkedin.com/in/dickson-neoh'
 			},
 			{
 				photo: members_15,
 				name: 'Gagandeep Gambhir',
-				description: 'Lead Front End Developer',
+				post: 'Lead Front End Developer',
 				linkedin: 'https://www.linkedin.com/in/gagandeep-gambhir-85a50645/'
 			},
 			{
 				photo: members_0,
 				name: 'Ofri Assif',
-				description: 'Office Admin',
+				post: 'Office Admin',
 				linkedin: 'https://www.linkedin.com/in/ofri-assif-0b5b20268/'
 			}
 		]

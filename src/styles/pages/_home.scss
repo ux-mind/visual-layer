@@ -13,18 +13,25 @@
 		}
 		&__animation {
 			position: absolute;
-			right: 0;
-			top: 0;
+			right: -50px;
+			top: -50px;
 			width: 657px;
 			height: 596px;
-			background-image: url('https://iili.io/HOl0b7p.png');
+			overflow: hidden;
+		}
+		&__animation-elem {
+			position: absolute;
+			width: 46647px;
+			height: 596px;
+			background-image: url('https://iili.io/HvuSQNp.webp'), url('https://iili.io/HvuSZDN.webp'), url('https://iili.io/HvuSLRR.webp');
+			background-position: 0, 16383px, 32766px;
+			background-repeat: no-repeat, no-repeat;
 			animation: play 3s steps(71) infinite;
 		}
 		@keyframes play {
-		   from { background-position:    0px; }
-			 to { background-position: -46647px; }
-		}
-		&__video {
+		   from { left: 0; }
+			 to { left: -46647px; }
+		}eo {
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -38,6 +45,8 @@
 			max-width: 588px;
 			width: 100%;
 			margin-top: 9px;
+			position: relative;
+			z-index: 1;
 		}
 		&__title {
 			font-family: 'Poppins';
@@ -65,6 +74,7 @@
 		&__button:hover {
 			color: #8DF6F1;
 			transition: color 0.25s ease;
+			font-weight: 600;
 		}
 		&__right {
 			width: 100%;
@@ -146,7 +156,7 @@
 			position: relative;
 			align-items: center;
 			img {
-				margin-right: 64px;
+				//margin-right: 64px;
 			}
 			img:last-child {
 			}
@@ -314,22 +324,41 @@
 				align-items: center;
 				justify-content: center;
 			}
+			.container {
+				position: relative;
+			}
 		}
 		.product-section-1 {
-			background: image('product-bg-1.png');
+			background: image('product-bg.png');
 			background-size: cover;
 			img {
 				max-width: 384px;
 			}
 			.home-product__section-info {
+				position: relative;
 				max-width: 544px;
 			}
 			.home-product__section-content {
 				gap: 144px;
 			}
+			.home-product__section-light {
+				width: 784px;
+				height: 757px;
+				position: absolute;
+				left: -212px;
+				top: -149px;
+				max-width: 784px;
+			}
+			.home-product__section-img-wrap {
+				position: relative;
+				.home-product__section-img {
+					position: relative;
+					z-index: 1;
+				}
+			}
 		}
 		.product-section-2 {
-			background: image('product-bg-2.png');
+			background: image('product-bg.png');
 			background-size: cover;
 			img {
 				max-width: 331px;
@@ -341,9 +370,24 @@
 			.home-product__section-content {
 				gap: 167px;
 			}
+			.home-product__section-light {
+				width: 731px;
+				height: 689px;
+				position: absolute;
+				left: -212px;
+				top: -149px;
+				max-width: 731px;
+			}
+			.home-product__section-img-wrap {
+				position: relative;
+				.home-product__section-img {
+					position: relative;
+					z-index: 1;
+				}
+			}
 		}
 		.product-section-3 {
-			background: image('product-bg-3.png');
+			background: image('product-bg.png');
 			background-size: cover;
 			img {
 				max-width: 406px;
@@ -353,6 +397,21 @@
 			}
 			.home-product__section-content {
 				gap: 122px;
+			}
+			.home-product__section-light {
+				width: 806px;
+				height: 735px;
+				position: absolute;
+				left: -212px;
+				top: -149px;
+				max-width: 806px;
+			}
+			.home-product__section-img-wrap {
+				position: relative;
+				.home-product__section-img {
+					position: relative;
+					z-index: 1;
+				}
 			}
 		}
 		&__title {
@@ -487,6 +546,9 @@
 			padding: 27px 101px 28px 108px;
 			display: flex;
 			justify-content: space-between;
+			max-width: 1205px;
+			margin-left: auto;
+			margin-right: auto;
 			.lf-player-container {
 				width: 378px;
 				height: 378px;
@@ -544,6 +606,7 @@
 		&__button:hover {
 			color: #8DF6F1;
 			transition: color 0.25s ease;
+			font-weight: 600;
 		}
 		&-modal-wrapper {
 			position: absolute;
@@ -599,6 +662,21 @@
 	}
 }
 
+@media screen and (max-width: 1341px) {
+	.home {
+		&-intro {
+			&__bottom {
+				&-content {
+					img {
+						transform: scale(0.6);
+						flex-shrink: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1230px) {
 	.home {
 		&-intro {
@@ -644,6 +722,11 @@
 				height: auto;
 			}
 		}
+		&-form {
+			&__content {
+				padding-left: 50px;
+			}
+		}
 	}
 }
 
@@ -652,7 +735,6 @@
 		&-intro {
 			padding-top: 121px;
 			&__animation {
-				background-image: url('https://iili.io/HOVxYAX.png');
 				transform: scale(0.8);
 				right: -150px;
 			}
@@ -718,8 +800,34 @@
 				}
 				&-content {
 					margin-top: 20px;
+					gap: 8px;
+					margin-left: -4px;
+					img {
+						transform: scale(1.4);
+						flex-shrink: 0;
+					}
 					.loop-collection {
 						max-height: 20px;
+					}
+					.partner-1 {
+						width: 59px;
+						height: 13px;
+					}
+					.partner-2 {
+						width: 71px;
+						height: 15px;
+					}
+					.partner-3 {
+						width: 71px;
+						height: 13px;
+					}
+					.partner-4 {
+						width: 60px;
+						height: 13px;
+					}
+					.partner-5 {
+						width: 68px;
+						height: 19px;
 					}
 				}
 			}
@@ -767,7 +875,7 @@
 				margin-top: 10px;
 				font-style: normal;
 				font-weight: 500;
-				font-size: 16px;
+				font-size: 15px;
 				line-height: 19px;
 				max-width: 187px;
 			}
@@ -790,6 +898,14 @@
 				.home-product__section-content {
 					gap: 38px;
 				}
+				.home-product__section-light {
+					width: 484px;
+					height: 457px;
+					position: absolute;
+					left: -157px;
+					top: -97px;
+					max-width: 484px;
+				}
 			}
 			.product-section-2 {
 				padding-top: 89px;
@@ -805,6 +921,14 @@
 				.home-product__section-content {
 					gap: 38px;
 				}
+				.home-product__section-light {
+					width: 431px;
+					height: 389px;
+					position: absolute;
+					left: -157px;
+					top: -77px;
+					max-width: 431px;
+				}
 			}
 			.product-section-3 {
 				padding-top: 61px;
@@ -816,6 +940,14 @@
 				}
 				.home-product__section-content {
 					gap: 20px;
+				}
+				.home-product__section-light {
+					width: 506px;
+					height: 435px;
+					position: absolute;
+					left: -127px;
+					top: -97px;
+					max-width: 406px;
 				}
 			}
 			&__section {
@@ -993,6 +1125,20 @@
 			}
 			&__form-error {
 				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.home {
+		&-intro {
+			&__bottom {
+				&-content {
+					img {
+						transform: scale(1);
+					}
+				}
 			}
 		}
 	}

@@ -231,7 +231,7 @@ const RequestADemo = () => {
 									<div className='requestademo__form-label'>
 										First name:&nbsp;<span>*</span>
 									</div>
-									<input name='name' onChange={handleInputChange} type='text'></input>
+									<input value={formValues.name} name='name' onChange={handleInputChange} type='text'></input>
 									{formErrors.name ?
 										<span className="requestademo__form-error">
 										{formErrors.name}
@@ -242,7 +242,7 @@ const RequestADemo = () => {
 									<div className='requestademo__form-label'>
 										Last name:&nbsp;<span>*</span>
 									</div>
-									<input onChange={handleInputChange} name='surname' type='text'></input>
+									<input value={formValues.surname} onChange={handleInputChange} name='surname' type='text'></input>
 									{formErrors.surname ?
 										<span className="requestademo__form-error">
 										{formErrors.surname}
@@ -253,7 +253,7 @@ const RequestADemo = () => {
 									<div className='requestademo__form-label'>
 										Email:&nbsp;<span>*</span>
 									</div>
-									<input onChange={handleInputChange} name='email' type='email' placeholder='name@company.com'></input>
+									<input value={formValues.email} onChange={handleInputChange} name='email' type='email' placeholder='name@company.com'></input>
 									{formErrors.email ?
 										<span className="requestademo__form-error">
 										{formErrors.email}
@@ -264,7 +264,7 @@ const RequestADemo = () => {
 									<div className='requestademo__form-label'>
 										Phone number:
 									</div>
-									<input onChange={handleInputChange} name='phone' type='text'></input>
+									<input value={formValues.phone} onChange={handleInputChange} name='phone' type='text'></input>
 									{formErrors.phone ?
 										<span className="requestademo__form-error">
 										{formErrors.phone}
@@ -275,7 +275,7 @@ const RequestADemo = () => {
 									<div className='requestademo__form-label'>
 										Job title:&nbsp;<span>*</span>
 									</div>
-									<input onChange={handleInputChange} name='job' type='text'></input>
+									<input value={formValues.job} onChange={handleInputChange} name='job' type='text'></input>
 									{formErrors.job ?
 										<span className="requestademo__form-error">
 										{formErrors.job}
@@ -286,7 +286,7 @@ const RequestADemo = () => {
 									<div className='requestademo__form-label'>
 										Company:&nbsp;<span>*</span>
 									</div>
-									<input onChange={handleInputChange} name='company' type='text' placeholder='Company'></input>
+									<input value={formValues.company} onChange={handleInputChange} name='company' type='text' placeholder='Company'></input>
 									{formErrors.company ?
 										<span className="requestademo__form-error">
 										{formErrors.company}
@@ -298,7 +298,7 @@ const RequestADemo = () => {
 								<div className='requestademo__form-label'>
 									Please share what you are building:&nbsp;<span>*</span>
 								</div>
-								<textarea onChange={handleInputChange} name='building' type='text'></textarea>
+								<textarea value={formValues.building} onChange={handleInputChange} name='building' type='text'></textarea>
 								{formErrors.building ?
 									<span className="requestademo__form-error">
 									{formErrors.building}
@@ -307,7 +307,7 @@ const RequestADemo = () => {
 							</div>
 							<button onClick={handleFormSubmit} className='requestademo__form-button'>Submit</button>
 							<div className='requestademo__form-text'>
-								By submitting this form, I agree to the <a href='#'>Terms&nbsp;of&nbsp;Use</a> and acknowledge that my information will be used in accordance with the <a href='#'>Privacy&nbsp;Policy</a>.
+								By submitting this form, I agree to the Terms&nbsp;of&nbsp;Use and acknowledge that my information will be used in accordance with the Privacy&nbsp;Policy.
 							</div>
 						</form>
 						{isModalOpen ?

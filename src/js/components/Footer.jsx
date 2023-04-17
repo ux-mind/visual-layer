@@ -121,7 +121,7 @@ const Footer = () => {
 							Be part of our social <span>community</span> and connect with us
 						</div>
 						<div className='footer__middle-wrap'>
-							<Link className='footer__middle-logo' href="/">
+							<Link className='footer__middle-logo' to="https://github.com/visual-layer/fastdup">
 								<img alt="" src={logo_2} />
 							</Link>
 							<ul className="footer__social-items">
@@ -188,9 +188,15 @@ const Footer = () => {
 						{bottomLinks.map((item) => {
 							return (
 								<li key={item.name}>
+									{item.href ?
 									<Link to={item.href}>
 										{item.name}
 									</Link>
+									: 
+									<a onClick={(e) => e.preventDefault()}>
+										{item.name}
+									</a>
+									}
 								</li>
 							)
 						})}

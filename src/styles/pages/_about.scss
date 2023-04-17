@@ -51,6 +51,7 @@
 			text-align: center;
 			letter-spacing: -0.02em;
 			color: #3B45FF;
+			font-family: 'Poppins';
 		}
 		&__subtitle {
 			font-style: normal;
@@ -92,7 +93,7 @@
 		&__description {
 			font-style: normal;
 			font-weight: 400;
-			font-size: 16px;
+			font-size: 15px;
 			line-height: 150%;
 			text-align: center;
 			color: #131825;
@@ -201,16 +202,42 @@
 			margin-top: 60px;
 			position: relative;
 			align-items: center;
-			img {
-				margin-right: 64px;
+			.partner-1 {
+				width: 167px;
+				height: 40px;
 			}
-			img:last-child {
+			.partner-2 {
+				width: 202px;
+				height: 45px;
+			}
+			.partner-3 {
+				width: 202px;
+				height: 38px;
+			}
+			.partner-4 {
+				width: 174px;
+				height: 38px;
+			}
+			.partner-5 {
+				width: 193px;
+				height: 57px;
 			}
 		}
 	}
 }
 
-
+@media screen and (max-width: 1341px) {
+	.about {
+		&-partners {
+			&__items {
+				img {
+					transform: scale(0.6);
+					flex-shrink: 0;
+				}
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 1230px) {
 	.about {
@@ -269,6 +296,9 @@
 				line-height: 125%;
 				/* or 45px */
 				letter-spacing: -0.02em;
+				br {
+					display: none;
+				}
 			}
 			&__description {
 				font-style: normal;
@@ -346,7 +376,7 @@
 			}
 			&__description {
 				font-weight: 400;
-				font-size: 16px;
+				font-size: 15px;
 				line-height: 150%;
 				text-align: center;
 				color: #131825;
@@ -422,9 +452,48 @@
 				.loop-collection {
 					max-height: 20px;
 				}
+				img {
+					transform: scale(1.4);
+					flex-shrink: 0;
+				}
+				.loop-collection {
+					max-height: 20px;
+				}
+				.partner-1 {
+					width: 59px;
+					height: 13px;
+				}
+				.partner-2 {
+					width: 71px;
+					height: 15px;
+				}
+				.partner-3 {
+					width: 71px;
+					height: 13px;
+				}
+				.partner-4 {
+					width: 60px;
+					height: 13px;
+				}
+				.partner-5 {
+					width: 68px;
+					height: 19px;
+				}
 			}
 			&__content {
 
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about {
+		&-partners {
+			&__items {
+				img {
+					transform: scale(1);
+				}
 			}
 		}
 	}

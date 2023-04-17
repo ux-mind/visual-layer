@@ -27,13 +27,13 @@ const Members = ({data}) => {
                         return (
                             <div key={item.name} className='about-members__item'>
                                 <div className='about-members__photo'>
-                                    <LazyLoadImage alt='' src={item.photo} />
+                                    <img alt='' src={item.photo} />
                                 </div>
                                 <a className='about-members__name' href={item.linkedin}>
                                     <div>
                                         {item.name}
                                     </div>
-                                    <LazyLoadImage alt='' src={linkedin} />
+                                    <img alt='' src={linkedin} />
                                 </a>
                                 {item.post ? 
                                 <div className='about-members__post'>
