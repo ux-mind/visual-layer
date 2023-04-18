@@ -41,7 +41,7 @@ const Intro = ({handleClick}) => {
             <div className="container">
                 <div className="about-intro__content">
                     <h1 className='about-intro__title'>
-                        Introducing Visual&nbsp;Layer:&nbsp;<br />The Next&#8209;Generation Visual Data Management Platform
+                        Introducing Visual&nbsp;Layer:&nbsp;<br />The Next-Generation Visual Data Management Platform
                     </h1>
                     <div className="about-intro__description-wrap">
                         <div className='about-intro__description'>
