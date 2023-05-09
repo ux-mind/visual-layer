@@ -47,7 +47,7 @@ const Partners = () => {
             <div className="container">
                 <div className='about-partners__content'>
                     <div className='about-partners__title'>
-                        180k+ users<br />who trust Visual Layer
+                        200k+ users<br />who trust Visual Layer
                     </div>
                     <div className='about-partners__items'>
                         {partners.map((item, i) => {

@@ -21,6 +21,7 @@ import members_13 from '../../../assets/images/members-13.png';
 import members_14 from '../../../assets/images/members-14.png';
 import members_15 from '../../../assets/images/members-15.png';
 import members_16 from '../../../assets/images/members-16.png';
+import members_17 from '../../../assets/images/members-17.png';
 import Header from '../../components/Header';
 
 const About = () => {
@@ -37,17 +38,17 @@ const About = () => {
 			{
 				photo: members_2,
 				name: 'Dr. Ben Lorica',
-				description: 'Ben Lorica is a Principal at Gradient Flowand the editor of the widely-read Gradient Flow Newsletter. As a seasoned data scientist, he holds co-chair positions.',
+				description: 'Ben Lorica is a Principal at Gradient Flowand the editor of the widely-read Gradient Flow Newsletter. As a seasoned data scientist, he holds co-chair positions at premier conferences in Data and AI.',
 				linkedin: 'https://www.linkedin.com/in/benlorica/'
 			},
 			{
-				photo: members_5,
+				photo: members_3,
 				name: 'Sethu Balan Raman',
 				description: 'Sethu Balan Raman was until recently a senior director at Apple in charge of all of the deep learning infrastructure team, leading hundreds of engineers. Prior to that he was VP Engineering of Turi, acquired by Apple.',
 				linkedin: 'https://www.linkedin.com/in/balansethuraman/'
 			},
 			{
-				photo: members_3,
+				photo: members_4,
 				name: 'Vijay Sharma',
 				description: 'Vijay Sharma is a seasoned entrepreneur based in Bangalore and drives Visual Layer engagements in India.',
 				linkedin: 'https://www.linkedin.com/in/vijaysw/'
@@ -58,7 +59,7 @@ const About = () => {
 		title: 'Leadership',
 		members: [
 			{
-				photo: members_4,
+				photo: members_5,
 				name: 'Dr. Danny Bickson',
 				post: 'Co-founder & CEO',
 				description: 'Former Co-founder and VP EMEA of Turi, acquired by Apple. CMU Researcher. Sr. Mgr at Apple.',
@@ -82,7 +83,14 @@ const About = () => {
 				photo: members_8,
 				name: 'Tal Weber',
 				post: 'CRO',
-				description: 'Tal Weber has 25+ years of Corporate Development experience and served in C-Level positions in several global entities.',
+				description: 'Tal Weber has 25+ years of Corporate Development experience and served in C-Level positions in several global entities.',
+				linkedin: 'https://www.linkedin.com/in/talweber/'
+			},
+			{
+				photo: members_9,
+				name: 'Elad Yaakov',
+				post: 'Director of Product',
+				description: 'An entrepreneur at heart with a proven track record of success delivering entire products, start to finish, including products like JFrog Xray and Snyk Code.',
 				linkedin: 'https://www.linkedin.com/in/talweber/'
 			}
 		]
@@ -91,51 +99,51 @@ const About = () => {
 		title: 'Team',
 		members: [
 			{
-				photo: members_9,
+				photo: members_10,
 				name: 'Amir Markovitz',
 				post: 'Sr. Machine Learning Researcher',
 				linkedin: 'https://www.linkedin.com/in/amir-markovitz/'
 			},
 			{
-				photo: members_10,
+				photo: members_11,
 				name: 'Omer Nagar',
 				post: 'Machine Learning Researcher',
 				linkedin: 'https://www.linkedin.com/in/ovednagar/'
 			},
 			{
-				photo: members_11,
+				photo: members_12,
 				name: 'Tom Shani',
 				post: 'Machine Learning Engineer',
 				linkedin: 'https://www.linkedin.com/in/tom-shani-748777252/'
 			},
 			{
-				photo: members_12,
+				photo: members_13,
 				name: 'Gal Bar Nissan',
-				post: 'Staff engineer',
+				post: 'Lead Full Stack Developer',
 				linkedin: 'https://www.linkedin.com/in/gal-bar-nissan-79441056/'
 			},
 			{
-				photo: members_13,
+				photo: members_14,
 				name: 'Adi Wishnitzer',
 				post: 'UI/UX Designer',
 				linkedin: 'https://www.linkedin.com/in/adi-wishnitzer/'
 			},
 			{
-				photo: members_14,
+				photo: members_15,
 				name: 'Dickson Neoh, Ph.D.',
 				post: 'Developer Relations Lead',
 				linkedin: 'https://www.linkedin.com/in/dickson-neoh'
 			},
 			{
-				photo: members_15,
+				photo: members_16,
 				name: 'Gagandeep Gambhir',
-				post: 'Senior Front End Engineer',
+				post: 'Lead Front End Developer',
 				linkedin: 'https://www.linkedin.com/in/gagandeep-gambhir-85a50645/'
 			},
 			{
-				photo: members_16,
+				photo: members_17,
 				name: 'Ofri Assif',
-				post: 'Office Admin',
+				post: 'Office Manager',
 				linkedin: 'https://www.linkedin.com/in/ofri-assif-0b5b20268/'
 			}
 		]
@@ -145,9 +153,11 @@ const About = () => {
 		<Header />
 		<main className="main about">
 			<Intro />
-			<Members data={data_1} />
-			<Members data={data_2} />
-			<Members data={data_3} />
+			<div className="about-members-wrap">
+				<Members data={data_1} />
+				<Members data={data_2} />
+				<Members data={data_3} />
+			</div>
 			<Gallery />
 			<Partners />
 		</main>

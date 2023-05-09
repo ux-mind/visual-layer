@@ -19,7 +19,7 @@ const Community = () => {
                         </div>
                         <div className='home-community__item community-item-2'>
                             <div className='home-community__item-number'>
-                                180,000+
+                                200,000+
                             </div>
                             <div className='home-community__item-text'>
                                 fastdup users
