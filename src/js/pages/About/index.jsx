@@ -119,7 +119,7 @@ const About = () => {
 			{
 				photo: members_13,
 				name: 'Gal Bar Nissan',
-				post: 'Lead Full Stack Developer',
+				post: 'Staff engineer',
 				linkedin: 'https://www.linkedin.com/in/gal-bar-nissan-79441056/'
 			},
 			{
@@ -137,7 +137,7 @@ const About = () => {
 			{
 				photo: members_16,
 				name: 'Gagandeep Gambhir',
-				post: 'Lead Front End Developer',
+				post: 'Senior Front End Engineer',
 				linkedin: 'https://www.linkedin.com/in/gagandeep-gambhir-85a50645/'
 			},
 			{
