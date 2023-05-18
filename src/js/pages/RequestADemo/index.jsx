@@ -198,11 +198,11 @@ const RequestADemo = () => {
 							<ul className='requestademo__info-list'>
 								<li>
 									<img src={requestademo_list} alt='' />
-									Gain insights, automatically find and fix data quality issues
+									Gain insights and automatically find and fix data quality issues
 								</li>
 								<li>
 									<img src={requestademo_list} alt='' />
-									Save up to 95% of your labeling costs
+									Save up to 95% on labeling costs
 								</li>
 								<li>
 									<img src={requestademo_list} alt='' />
@@ -219,7 +219,7 @@ const RequestADemo = () => {
 							</ul>
 							<div className='requestademo__developers'>
 								<img alt="" src={intro_icon} />
-								From the creators of fastdup, XGBoost & Turi Create
+								From the creators of fastdup, XGBoost, and Turi Create
 							</div>
 						</div>
 						<form className='requestademo__form'>

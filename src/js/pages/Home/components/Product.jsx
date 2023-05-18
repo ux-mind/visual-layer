@@ -22,14 +22,14 @@ const Product = () => {
                     <div className='home-product__section-content'>
                         <div className='home-product__section-img-wrap'>
                             <img className='home-product__section-img' alt="" src={product_img_1} srcSet={`${product_img_1} 1x, ${product_img_1_2x} 2x`}/>
-                            <img className='home-product__section-light' alt="" src={light_1}/>
+                            {/*<img className='home-product__section-light' alt="" src={light_1}/>*/}
                         </div>
                         <div className='home-product__section-info'>
                             <div className='home-product__section-title'>
                                 Seamlessly ingest data from any source
                             </div>
                             <div className='home-product__section-text'>
-                                Our platform offers effortless integration with various data sources, such as local disks, network file systems, and major cloud providers such as AWS, GCP, and Azure.
+                                Our platform offers effortless integration with various data sources including local disks, network file systems, and major cloud providers such as AWS, GCP, and Azure.
                             </div>
                         </div>
                     </div>
@@ -43,12 +43,12 @@ const Product = () => {
                                 Automatically gain valuable insights and identify data quality issues
                             </div>
                             <div className='home-product__section-text'>
-                                Visual Layer automatically scans through your entire dataset, whether it's 10K or 50B images, and continuously provides insights about your data while alerting you to possible quality issues in your dataset.
+                                Visual Layer automatically scans your entire dataset, whether 10K or 50B images, and continuously provides insights into your data while alerting you to possible quality issues in your dataset.
                             </div>
                         </div>
                         <div className='home-product__section-img-wrap'>
                             <img className='home-product__section-img' alt="" src={product_img_2} srcSet={`${product_img_2} 1x, ${product_img_2_2x} 2x`} />
-                            <img className='home-product__section-light' alt="" src={light_2}/>
+                            {/*<img className='home-product__section-light' alt="" src={light_2}/>*/}
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ const Product = () => {
                     <div className='home-product__section-content'>
                         <div className='home-product__section-img-wrap'>
                             <img className='home-product__section-img' alt="" src={product_img_3} srcSet={`${product_img_3} 1x, ${product_img_3_2x} 2x`} />
-                            <img className='home-product__section-light' alt="" src={light_3}/>
+                            {/*<img className='home-product__section-light' alt="" src={light_3}/>*/}
                         </div>
                         <div className='home-product__section-info'>
                             <div className='home-product__section-title'>

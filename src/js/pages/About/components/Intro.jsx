@@ -45,10 +45,10 @@ const Intro = ({handleClick}) => {
                     </h1>
                     <div className="about-intro__description-wrap">
                         <div className='about-intro__description'>
-                            Visual Layer is building the most powerful visual data management platform that enables companies to manage and curate massive image and video datasets with unparalleled speed and quality. Based on the popular open-source project fastdup, Visual Layer leverages its proprietary graph engine to automatically detect data quality issues such as corrupted images, wrong labels, and outliers, and suggest correction steps to ensure high-quality datasets.
+                            Visual Layer is building the most powerful visual data management platform that enables companies to manage and curate massive image and video datasets with unparalleled speed and quality.Based on the popular open-source project fastdup, Visual Layer leverages its proprietary graph engine to automatically detect data quality issues like corrupted images, wrong labels, and outliers, and suggest correction steps to ensure high-quality datasets.
                         </div>
                         <div className='about-intro__creators-mobile'>
-                            From the creators of fastdup, XGBoost & Turi Create
+                            From the creators of fastdup, XGBoost, and Turi Create
                         </div>
                         <Player
                             src={sample}
@@ -58,7 +58,7 @@ const Intro = ({handleClick}) => {
                         />
                     </div>
                     <div className='about-intro__creators'>
-                        From the creators of fastdup, XGBoost & Turi Create
+                        From the creators of fastdup, XGBoost, and Turi Create
                     </div>
                 </div>
             </div>

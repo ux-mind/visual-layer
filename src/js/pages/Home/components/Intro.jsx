@@ -100,7 +100,7 @@ const Intro = ({handleClick}) => {
                             Simplify Your Visual Data Ops
                         </h1>
                         <div className='home-intro__description'>
-                            You can focus on creating amazing products while we manage your visual data
+                            You focus on creating amazing products while we manage your visual data
                         </div>
                         <Link to={PUBLIC_ROUTES.request_a_demo}>
                             <button className='home-intro__button'>
@@ -109,7 +109,7 @@ const Intro = ({handleClick}) => {
                         </Link>
                         <div className='home-intro__developers'>
                             <img alt="" src={intro_icon} />
-                            <span>From the creators of fastdup, XGBoost & Turi Create</span>
+                            <span>From the creators of fastdup, XGBoost, and Turi Create</span>
                         </div>
                     </div>
                     <div className='home-intro__animation'>

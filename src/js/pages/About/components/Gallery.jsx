@@ -63,7 +63,7 @@ const Gallery = ({data}) => {
                     </div>
                 </div>
                 <div className="about-gallery__offices">
-                    Our offices located in Tel Aviv, California and Bangalore
+                    Our offices located in Tel Aviv, California, and Bangalore
                 </div>
             </div>
         </section>

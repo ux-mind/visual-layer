@@ -27,7 +27,7 @@ const Community = () => {
                         </div>
                         <div className='home-community__item community-item-3'>
                             <div className='home-community__item-number'>
-                                1$
+                                $1
                             </div>
                             <div className='home-community__item-text'>
                                 Cloud cost for running on 10,000,000 images

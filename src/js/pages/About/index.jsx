@@ -32,7 +32,7 @@ const About = () => {
 			{
 				photo: members_1,
 				name: 'Prof. Joe Hellerstein',
-				description: 'Joseph M. Hellerstein is the Jim Gray Professor of Computer Science at the University of California, Berkeley, where has taught and led research teams in data systems since 1995.',
+				description: "Joseph M. Hellerstein is the Jim Gray Professor of Computer Science at the University of California, Berkeley, where he’s taught and led research teams in data systems since 1995.",
 				linkedin: 'https://www.linkedin.com/in/joehellerstein/'
 			},
 			{
@@ -44,13 +44,13 @@ const About = () => {
 			{
 				photo: members_3,
 				name: 'Sethu Balan Raman',
-				description: 'Sethu Balan Raman was until recently a senior director at Apple in charge of all of the deep learning infrastructure team, leading hundreds of engineers. Prior to that he was VP Engineering of Turi, acquired by Apple.',
+				description: 'Sethu Balan Raman was until recently a senior director at Apple in charge of the entire deep learning infrastructure team, where he led hundreds of engineers. Prior to that he was VP Engineering of Turi, acquired by Apple.',
 				linkedin: 'https://www.linkedin.com/in/balansethuraman/'
 			},
 			{
 				photo: members_4,
 				name: 'Vijay Sharma',
-				description: 'Vijay Sharma is a seasoned entrepreneur based in Bangalore and drives Visual Layer engagements in India.',
+				description: 'Vijay Sharma is a seasoned entrepreneur based in Bangalore. He drives Visual Layer engagements in India.',
 				linkedin: 'https://www.linkedin.com/in/vijaysw/'
 			}
 		]
@@ -90,8 +90,8 @@ const About = () => {
 				photo: members_9,
 				name: 'Elad Yaakov',
 				post: 'Director of Product',
-				description: 'An entrepreneur at heart with a proven track record of success delivering entire products, start to finish, including products like JFrog Xray and Snyk Code.',
-				linkedin: 'https://www.linkedin.com/in/talweber/'
+				description: 'An entrepreneur at heart with a proven track record of success delivering entire products, start to finish, such as JFrog Xray and Snyk Code.',
+				linkedin: 'https://www.linkedin.com/in/eladyaakov'
 			}
 		]
 	};

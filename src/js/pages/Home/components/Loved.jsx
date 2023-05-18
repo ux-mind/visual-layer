@@ -17,7 +17,7 @@ const Loved = () => {
                         <div className='home-loved__item loved-item-1'>
                             <LazyLoadImage alt="" src={loved_img_1} />
                             <div className='home-loved__item-text'>
-                                fastdup worked great. Already on my way
+                                “fastdup worked great. Already on my way”
                             </div>
                             <div className='home-loved__item-name'>
                                 Suhail Doshi
@@ -29,7 +29,7 @@ const Loved = () => {
                         <div className='home-loved__item loved-item-2'>
                             <LazyLoadImage alt="" src={loved_img_2} />
                             <div className='home-loved__item-text'>
-                                Meesho is using fastdup to curate 1,000,000,000 images of our digital catalog
+                                “Meesho is using fastdup to curate 1,000,000,000 images of our digital catalog”
                             </div>
                             <div className='home-loved__item-name'>
                                 Srinivasa Rao Jami
@@ -41,7 +41,7 @@ const Loved = () => {
                         <div className='home-loved__item loved-item-3'>
                             <LazyLoadImage alt="" src={loved_img_3} />
                             <div className='home-loved__item-text'>
-                                Everyone should de-duplicate their images
+                                “Everyone should de-duplicate their images”
                             </div>
                             <div className='home-loved__item-name'>
                                 Eric Wallace
