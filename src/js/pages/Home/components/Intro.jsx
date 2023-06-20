@@ -102,9 +102,9 @@ const Intro = ({handleClick}) => {
                         <div className='home-intro__description'>
                             You focus on creating amazing products while we manage your visual data
                         </div>
-                        <Link to={PUBLIC_ROUTES.request_a_demo}>
+                        <Link to='https://app.visual-layer.com/'>
                             <button className='home-intro__button'>
-                                Request a demo
+                                Get Started
                             </button>
                         </Link>
                         <div className='home-intro__developers'>

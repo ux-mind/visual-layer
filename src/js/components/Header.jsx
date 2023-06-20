@@ -33,6 +33,22 @@ const links = [
 	{
 		name: 'Contact',
 		href: 'mailto:info@visual-layer.com'
+	},
+	{
+		name: 'Blog',
+		href: 'https://medium.com/visual-layer'
+	}
+];
+
+const links_right = [
+	{
+		name: 'Book a Demo',
+		href: PUBLIC_ROUTES.request_a_demo
+	},
+	{
+		name: 'Log In',
+		href: 'https://app.visual-layer.com/',
+		bold: true
 	}
 ];
 
@@ -52,8 +68,12 @@ const links_mobile = [
 		]
 	},
 	{
-		name: 'Request a demo',
+		name: 'Book a Demo',
 		href: PUBLIC_ROUTES.request_a_demo
+	},
+	{
+		name: 'Blog',
+		href: 'https://medium.com/visual-layer'
 	},
 	{
 		name: 'Contact',
@@ -136,15 +156,27 @@ const Header = () => {
 								</li>
 							))}
 						</ul>
+						<ul className="header-links right-links">
+							{links_right.map(({ name, href, bold }) => (
+								<li
+									onMouseEnter={(e) => e.target.style.pointerEvents = "auto"}
+									className={`header-links__item ${bold ? 'bold' : ''}`} key={name}
+								>
+									<Link to={href}>
+										{name}
+									</Link>
+								</li>
+							))}
+						</ul>
 						<Link
 						style={location.pathname === PUBLIC_ROUTES.request_a_demo ? {
 							visibility: 'hidden'
 						} : null}
 						className="header__button-wrap"
-						to={PUBLIC_ROUTES.request_a_demo}
+						to="https://app.visual-layer.com/"
 						>
 							<button className='header__button'>
-								Request a demo
+								Get Started
 							</button>
 						</Link>
 						<img onClick={menuOpen} className="header__burger" alt="" src={location.pathname === PUBLIC_ROUTES.about && onTop ? burger_black : burger} />

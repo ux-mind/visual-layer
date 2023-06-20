@@ -75,11 +75,11 @@ const bottomLinks = [
 	},
 	{
 		name: 'Privacy policy',
-		href: ''
+		href: 'https://visual-layer2.readme.io/docs/privacy-policy'
 	},
 	{
 		name: 'Terms of Use',
-		href: ''
+		href: 'https://visual-layer2.readme.io/docs/terms-of-service'
 	}
 ];
 

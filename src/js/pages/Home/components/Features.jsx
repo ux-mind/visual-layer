@@ -27,13 +27,14 @@ const Features = () => {
                 <div className="home-features__content">
                     <div className="home-features__top">
                         <div className="home-features__number">
-                            <CountUp
+                            50,000,000,000+
+                            {/*<CountUp
                                 className='home-features__counter'
                                 enableScrollSpy={true}
                                 scrollSpyOnce={true}
                                 end={50000000000}
                                 onStart={() => counterAdd()}
-                            />
+                            />*/}
                         </div>
                         <div className="home-features__label">
                             Images processed so far
